@@ -21,7 +21,7 @@ public class AutentificacionController {
     @Autowired
     AutentificarUser authService;
 
-    @//Autowired
+    //@//Autowired
     //private JwtToken jwtTokenCross;
 
     //Logger logger = LoggerFactory.getLogger(AutentificacionController.class);
