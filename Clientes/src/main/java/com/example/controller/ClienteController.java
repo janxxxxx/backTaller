@@ -55,11 +55,6 @@ public class ClienteController {
 
 
 
-    // @RequestMapping("/login")
-    // public String logeo(){
-
-    //     return "/login";
-    // }
 
     @GetMapping("/crear/{id}")
     public String editar(@PathVariable(value = "id") Long id, Map<String, Object> model) {
