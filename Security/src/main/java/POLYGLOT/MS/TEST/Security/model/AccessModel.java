@@ -22,17 +22,6 @@ public class AccessModel {
     @Column(name = "password")
     private String password;
 
-    @Column(name = "rol")
-    private String rol;
-
-    public String getRol() {
-        return rol;
-    }
-
-    public void setRol(String rol) {
-        this.rol = rol;
-    }
-
     public Integer getId_user() {
         return id_user;
     }
