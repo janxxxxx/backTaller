@@ -35,7 +35,7 @@ public class UsuarioController {
             return lista;
         } catch (Exception e) {
             // Usamos el logger para registrar el error
-            logger.error("Error al obtener la lista de alumnos: {}", e.getMessage(), e);
+            logger.error("Error al obtener la lista de usuarios: {}", e.getMessage(), e);
             return new ArrayList<>(); // Retornar lista vacía en caso de error
         } finally {
             // Usamos el logger para informar que el metodo se ejecuto
@@ -49,7 +49,7 @@ public class UsuarioController {
             return usuarioService.add(model);
         } catch (Exception e) {
             // Usamos el logger para registrar el error
-            logger.error("Error al crear el alumno: {}", e.getMessage(), e);
+            logger.error("Error al crear el usuario: {}", e.getMessage(), e);
             return null; // Retornar nulo en caso de error
         } finally {
             // Usamos el logger para informar que el metodo se ejecuto
@@ -63,7 +63,7 @@ public class UsuarioController {
             return usuarioService.findById(id);
         } catch (Exception e) {
             // Usamos el logger para registrar el error
-            logger.error("Error al buscar el alumno con ID {}: {}", id, e.getMessage(), e);
+            logger.error("Error al buscar el usuario con ID {}: {}", id, e.getMessage(), e);
             return null; // Retornar nulo en caso de error
         } finally {
             // Usamos el logger para informar que el método se ejecutó
@@ -77,7 +77,7 @@ public class UsuarioController {
             return usuarioService.update(model);
         } catch (Exception e) {
             // Usamos el logger para registrar el error
-            logger.error("Error al actualizar el alumno: {}", e.getMessage(), e);
+            logger.error("Error al actualizar el usuario: {}", e.getMessage(), e);
             return null; // Retornar nulo en caso de error
         } finally {
             // Usamos el logger para informar que el método se ejecutó
