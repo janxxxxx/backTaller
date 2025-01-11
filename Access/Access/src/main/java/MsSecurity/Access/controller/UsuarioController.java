@@ -17,7 +17,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import MsSecurity.Access.constanst.NoHardCodeo;
 import MsSecurity.Access.model.UsuarioModel;
-import MsSecurity.Access.repository.IUsuarioRepository;
 import MsSecurity.Access.services.UsuarioService;
 
 @RestController
@@ -59,9 +58,9 @@ public class UsuarioController {
     }
 
     @GetMapping(NoHardCodeo.GET_BY_ID)
-    public AlumnoModel findById(@PathVariable Integer id) {
+    public UsuarioModel findById(@PathVariable Integer id) {
         try {
-            return alumnoService.findById(id);
+            return usuarioService.findById(id);
         } catch (Exception e) {
             // Usamos el logger para registrar el error
             logger.error("Error al buscar el alumno con ID {}: {}", id, e.getMessage(), e);
@@ -73,9 +72,9 @@ public class UsuarioController {
     }
 
     @PutMapping(NoHardCodeo.UPDATE)
-    public AlumnoModel update(@RequestBody AlumnoModel model) {
+    public UsuarioModel update(@RequestBody UsuarioModel model) {
         try {
-            return alumnoService.update(model);
+            return usuarioService.update(model);
         } catch (Exception e) {
             // Usamos el logger para registrar el error
             logger.error("Error al actualizar el alumno: {}", e.getMessage(), e);
@@ -89,11 +88,11 @@ public class UsuarioController {
     @DeleteMapping(NoHardCodeo.DELETE)
     public String delete(@PathVariable Integer id) {
         try {
-            boolean isDeleted = alumnoService.delete(id);
+            boolean isDeleted = usuarioService.delete(id);
             return isDeleted ? "Usuario eliminado correctamente" : "Error al eliminar usuario";
         } catch (Exception e) {
             // Usamos el logger para registrar el error
-            logger.error("Error al eliminar el alumno con ID {}: {}", id, e.getMessage(), e);
+            logger.error("Error al eliminar el usuario con ID {}: {}", id, e.getMessage(), e);
             return "Ocurrio un error al intentar eliminar el usuario.";
         } finally {
             // Usamos el logger para informar que el método se ejecutó
