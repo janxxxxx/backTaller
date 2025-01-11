@@ -1,3 +1,4 @@
+package main.java.MsProveedores.MsProveedores.Controller;
 
 import java.util.HashMap;
 import java.util.List;
@@ -16,9 +17,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.examenparcial.endpoints.Endpoints; // Cambiar la importación aquí
-
 import jakarta.validation.Valid;
+import main.java.MsProveedores.MsProveedores.endpoints.Endpoints;
 import main.java.MsProveedores.MsProveedores.model.modelProvedor;
 import main.java.MsProveedores.MsProveedores.service.ProvedoresService;
 
