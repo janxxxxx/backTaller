@@ -52,7 +52,7 @@ public class ProvedoresController {
             }
 
             // Guardar el nuevo proveedor
-            proveedorService.add(model);
+            ProvedoresService.add(model);
             return ResponseEntity.status(HttpStatus.CREATED).body("Proveedor registrado con éxito.");
 
         } catch (Exception e) {
