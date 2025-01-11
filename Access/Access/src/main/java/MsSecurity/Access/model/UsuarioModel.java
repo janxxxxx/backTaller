@@ -16,8 +16,11 @@ public class UsuarioModel {
     @Column(name="idUsuario")
     public Integer idAlumno;
 
-    @Column(name= "username")
+    @Column(name= "nombre")
     public String nombre;
+
+    @Column(name= "username")
+    public String username;
 
     @Column(name= "password")
     public String nota;
