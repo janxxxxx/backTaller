@@ -21,7 +21,7 @@ public class ProvedoresService implements IProvedoresService { // Usamos "Proved
     }
 
     @Override
-    public provedorRepository add(provedorRepository provedor) {
+    public modelProvedor add(modelProvedor provedor) {
         return provedorRepository.save(provedor); // Usamos "Provedor" con v
     }
 

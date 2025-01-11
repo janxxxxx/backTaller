@@ -9,7 +9,7 @@ import main.java.MsProveedores.MsProveedores.model.modelProvedor;
 public class ProveedorMapper {
 
     // Método para convertir una entidad ProveedorModel a un DTO ProveedorDTO
-    public AuthRequest entityToDto(ModelProvedor modelProvedor) {
+    public AuthRequest entityToDto(modelProvedor modelProvedor) {
         AuthRequest dto = new AuthRequest();
         // Asignar los valores de ModelProvedor a los campos de AuthRequest
         dto.setProveedor_id(modelProvedor.getProveedor_id());
