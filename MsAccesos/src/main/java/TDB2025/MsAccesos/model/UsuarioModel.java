@@ -1,4 +1,4 @@
-package TDB2025.MsAccesos.model;
+package main.java.TDB2025.MsAccesos.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
