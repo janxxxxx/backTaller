@@ -1,14 +1,14 @@
-#mvn --version
+
+# Etapa 1: Construcción
 FROM maven:3.6.3-openjdk-17 AS build
 WORKDIR /home/app
-COPY . /home/app
-RUN mvn -f /home/app/pom.xml clean package -DskipTests  
+COPY . .
+RUN mvn clean package -DskipTests
 
-#java --version
-FROM  openjdk:19
-VOLUME /tmp
-EXPOSE 82
+# Etapa 2: Runtime
+FROM openjdk:19-jdk
+WORKDIR /home/app
 COPY --from=build /home/app/target/*.jar app.jar
+EXPOSE 82
 ENV SPRING_PROFILES_ACTIVE=docker
-
-ENTRYPOINT ["sh", "-c", "java -jar /app.jar"]
+ENTRYPOINT ["java", "-jar", "/home/app/app.jar"]
