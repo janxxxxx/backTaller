@@ -1,13 +1,14 @@
-# Etapa de construcción
-FROM maven:3.9.4-eclipse-temurin-17 AS build
+#mvn --version
+FROM maven:3.6.3-openjdk-17 AS build
 WORKDIR /home/app
 COPY . /home/app
-RUN mvn -f /home/app/pom.xml clean package -DskipTests
+RUN mvn -f /home/app/pom.xml clean package -DskipTests  
 
-# Etapa de ejecución
-FROM eclipse-temurin:17-jdk
+#java --version
+FROM  openjdk:19
 VOLUME /tmp
-EXPOSE 83
+EXPOSE 82
 COPY --from=build /home/app/target/*.jar app.jar
 ENV SPRING_PROFILES_ACTIVE=docker
-ENTRYPOINT ["java", "-jar", "/app.jar"]
+
+ENTRYPOINT ["sh", "-c", "java -jar /app.jar"]
