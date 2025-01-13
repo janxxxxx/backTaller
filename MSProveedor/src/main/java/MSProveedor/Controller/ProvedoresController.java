@@ -5,6 +5,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -26,37 +28,38 @@ import jakarta.validation.Valid;
 @RequestMapping(Endpoints.BASE_PATH) // Usar la constante BASE_PATH
 public class ProvedoresController {
 
+    private static final Logger logger = LoggerFactory.getLogger(ProvedoresController.class); // Logger
+
     @Autowired
     ProvedoresService ProvedoresService; // Inyectar ProveedorService
 
     // Buscar todos los proveedores
     @GetMapping(Endpoints.LISTAR) // Usar la constante LISTAR
     public ResponseEntity<Map<String, Object>> findAll() {
+        logger.info("Iniciando búsqueda de todos los proveedores");
         List<modelProvedor> lista = ProvedoresService.findAll();
-
-        // Crear un Map para incluir el mensaje y la lista
         Map<String, Object> response = new HashMap<>();
         response.put("Lista de todos los proveedores existentes", lista);
+        logger.info("Se encontraron {} proveedores", lista.size());
         return ResponseEntity.ok(response);
     }
 
     // Crear nuevo proveedor
     @PostMapping(Endpoints.CREATE) // Usar la constante CREATE
     public ResponseEntity<String> create(@Valid @RequestBody modelProvedor model) {
+        logger.info("Iniciando creación de un nuevo proveedor con ID: {}", model.getProveedor_id());
         try {
-            // Verificar si el proveedor ya existe por su RUC
             Optional<modelProvedor> existingProveedor = ProvedoresService.findById(model.getProveedor_id());
-            if (existingProveedor.isPresent()) { // Verifica si el proveedor ya existe
+            if (existingProveedor.isPresent()) {
+                logger.warn("El proveedor con ID: {} ya existe", model.getProveedor_id());
                 return ResponseEntity.status(HttpStatus.CONFLICT)
                         .body("Proveedor ya existente. No se puede registrar.");
             }
-
-            // Guardar el nuevo proveedor
             ProvedoresService.add(model);
+            logger.info("Proveedor con ID: {} registrado con éxito", model.getProveedor_id());
             return ResponseEntity.status(HttpStatus.CREATED).body("Proveedor registrado con éxito.");
-
         } catch (Exception e) {
-            // Manejo de excepciones generales
+            logger.error("Error al crear el proveedor: {}", e.getMessage(), e);
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
                     .body("Error al crear el proveedor: " + e.getMessage());
         }
@@ -65,15 +68,16 @@ public class ProvedoresController {
     // Editar un proveedor
     @PutMapping(Endpoints.UPDATE) // Usar la constante UPDATE
     public ResponseEntity<Map<String, Object>> update(@Valid @RequestBody modelProvedor model) {
+        logger.info("Iniciando edición del proveedor con ID: {}", model.getProveedor_id());
         try {
             modelProvedor proveedor = ProvedoresService.update(model);
-            // Crear el Map para incluir el mensaje de éxito y el proveedor editado
             Map<String, Object> response = new HashMap<>();
             response.put("mensaje", "Proveedor editado con éxito");
             response.put("proveedor", proveedor);
+            logger.info("Proveedor con ID: {} editado con éxito", model.getProveedor_id());
             return ResponseEntity.ok(response);
         } catch (Exception e) {
-            // Manejo de excepciones si algo falla
+            logger.error("Error al editar el proveedor con ID: {}", model.getProveedor_id(), e);
             Map<String, Object> errorResponse = new HashMap<>();
             errorResponse.put("mensaje", "Error al editar el proveedor");
             errorResponse.put("error", e.getMessage());
@@ -84,12 +88,13 @@ public class ProvedoresController {
     // Buscar por ID
     @GetMapping(Endpoints.GET) // Usar la constante GET
     public ResponseEntity<modelProvedor> findById(@PathVariable int id) {
-        Optional<modelProvedor> proveedorOptional = ProvedoresService.findById(id); // Cambia esto a Optional
+        logger.info("Buscando proveedor con ID: {}", id);
+        Optional<modelProvedor> proveedorOptional = ProvedoresService.findById(id);
         if (proveedorOptional.isPresent()) {
-            // Si el proveedor existe, devuelve el proveedor
+            logger.info("Proveedor con ID: {} encontrado", id);
             return ResponseEntity.ok(proveedorOptional.get());
         } else {
-            // Si el proveedor no existe, devuelve un 404 Not Found
+            logger.warn("Proveedor con ID: {} no encontrado", id);
             return ResponseEntity.notFound().build();
         }
     }
@@ -97,22 +102,20 @@ public class ProvedoresController {
     // Eliminar un proveedor por ID
     @DeleteMapping(Endpoints.DELETE) // Usar la constante DELETE
     public ResponseEntity<String> delete(@PathVariable int id) {
+        logger.info("Iniciando eliminación del proveedor con ID: {}", id);
         try {
-            // Verificar si el proveedor existe usando Optional
             Optional<modelProvedor> proveedorOpt = ProvedoresService.findById(id);
-            // Si el proveedor no existe
             if (!proveedorOpt.isPresent()) {
+                logger.warn("Proveedor con ID: {} no encontrado para eliminar", id);
                 return ResponseEntity.status(HttpStatus.NOT_FOUND)
                         .body("Proveedor no existente. No se puede eliminar.");
             }
-            // Si el proveedor existe, proceder a eliminarlo
             ProvedoresService.delete(id);
-
-            // Retornar mensaje de éxito
+            logger.info("Proveedor con ID: {} eliminado con éxito", id);
             return ResponseEntity.status(HttpStatus.OK)
                     .body("Proveedor eliminado con éxito.");
         } catch (Exception e) {
-            // Manejo de excepciones generales
+            logger.error("Error al eliminar el proveedor con ID: {}", id, e);
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
                     .body("Error al eliminar el proveedor: " + e.getMessage());
         }

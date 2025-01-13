@@ -1,28 +1,30 @@
-<configuration>
+<configuration >
+    <!-- Consola 
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
             <pattern>[%d{yyyy-MM-dd HH:mm:ss}] - %msg%n</pattern>
         </encoder>
     </appender>
-    
+-->
+    <!-- Archivo con rotación basada en tiempo -->
     <appender name="SIZE_TIME_OUTPUT_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>C:/Users/janst/Documents/UNU/taller/backTaller/MSProveedor/logProvedores.log</file>
+        <file>C:/Users/janst/Documents/UNU/taller/backTaller/MSProveedor/logProvedores/logProvedores.log</file>
         <encoder>
             <pattern>[%d{yyyy-MM-dd HH:mm:ss}] - %msg%n</pattern>
         </encoder>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>C:/Users/janst/Documents/UNU/taller/backTaller/MSProveedor/logProvedores.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
-            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
-                <!-- Tamaño máximo del archivo -->
-                <maxFileSize>10KB</maxFileSize>
-            </timeBasedFileNamingAndTriggeringPolicy>
-            <!-- Número de días para guardar los archivos de log -->
+            <!-- Archivo de log rotado por fecha -->
+            <fileNamePattern>C:/Users/janst/Documents/UNU/taller/backTaller/MSProveedor/logProvedores/archived/Provedores.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <!-- Días para mantener logs -->
             <maxHistory>7</maxHistory>
+            <!-- Tamaño total máximo permitido para logs -->
+            <totalSizeCap>50MB</totalSizeCap>
         </rollingPolicy>
     </appender>
-    
+
+    <!-- Logger raíz -->
     <root level="DEBUG">
-        <appender-ref ref="SIZE_TIME_OUTPUT_FILE"/>
-        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="SIZE_TIME_OUTPUT_FILE" />
+        <appender-ref ref="STDOUT" />
     </root>
 </configuration>
