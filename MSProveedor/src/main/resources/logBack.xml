@@ -6,12 +6,12 @@
     </appender>
     
     <appender name="SIZE_TIME_OUTPUT_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>C:/Users/janst/Documents/UNU/taller/backTaller/MSProveedor/.mvn/wrapper/logProvedores.log</file>
+        <file>C:/Users/janst/Documents/UNU/taller/backTaller/MSProveedor/logProvedores.log</file>
         <encoder>
             <pattern>[%d{yyyy-MM-dd HH:mm:ss}] - %msg%n</pattern>
         </encoder>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>C:/Users/janst/Documents/UNU/taller/backTaller/MSProveedor/.mvn/wrapper/logProvedores.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <fileNamePattern>C:/Users/janst/Documents/UNU/taller/backTaller/MSProveedor/logProvedores.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
             <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
                 <!-- Tamaño máximo del archivo -->
                 <maxFileSize>10KB</maxFileSize>
