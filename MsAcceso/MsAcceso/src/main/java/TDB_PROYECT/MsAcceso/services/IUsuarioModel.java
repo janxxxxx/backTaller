@@ -10,4 +10,6 @@ public interface IUsuarioModel {
     public UsuarioModel add(UsuarioModel model);
     public UsuarioModel update(UsuarioModel model);
     public Boolean delete(Integer id);
+    public String LoguearPorRol(String  username, String password,Integer rol );
+    public Boolean validarUsuario(String username);
 }

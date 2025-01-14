@@ -2,6 +2,7 @@ package TDB_PROYECT.MsAcceso.controller;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -98,6 +99,35 @@ public class UsuarioController {
         } finally {
             // Usamos el logger para informar que el método se ejecutó
             logger.info("Metodo delete ejecutado.");
+        }
+    }
+
+    @PostMapping("/login-por-role")
+    public String loginWithRole(@RequestBody Map<String, Object> loginRequest) {
+        try {
+            String username = (String) loginRequest.get("username");
+            String password = (String) loginRequest.get("password");
+            Integer rol = (Integer) loginRequest.get("rol");
+
+            return usuarioService.LoguearPorRol(username,password,rol);
+        } catch (Exception e) {
+            logger.error("Error al intentar loguear al usuario: {}", e.getMessage(), e);
+            return "Error en la solicitud de login";
+        } finally {
+            logger.info("Metodo loginWithRole ejecutado");
+        }
+    }
+
+    @GetMapping("/existe/{username}")
+    public String checkUserExists(@PathVariable String username) {
+        try {
+            boolean exists = usuarioService.validarUsuario(username);
+            return exists ? "El usuario existe" : "El usuario no existe";
+        } catch (Exception e) {
+            logger.error("Error al validar la existencia del usuario: {}", e.getMessage(), e);
+            return "Error al verificar la existencia del usuario";
+        } finally {
+            logger.info("Método checkUserExists ejecutado");
         }
     }
 
