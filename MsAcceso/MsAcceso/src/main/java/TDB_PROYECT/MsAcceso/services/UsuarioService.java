@@ -5,6 +5,8 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import TDB_PROYECT.MsAcceso.model.UsuarioModel;
@@ -14,6 +16,7 @@ import TDB_PROYECT.MsAcceso.repository.IUsuarioRepository;
 public class UsuarioService implements IUsuarioModel{
     @Autowired
     IUsuarioRepository repository;
+    private final PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 
     @Override
     public List<UsuarioModel> findAll() {
@@ -70,6 +73,18 @@ public class UsuarioService implements IUsuarioModel{
             // Manejo de errores
             return false;
         }
+    }
+
+    // Metodo para encriptar la contraseña
+    @Override
+    public String encryptPassword(String password) {
+        return passwordEncoder.encode(password);
+    }
+
+    // Metodo para validar una contraseña contra su hash
+    @Override
+    public Boolean validatePassword(String password, String encodedPassword) {
+        return passwordEncoder.matches(password, encodedPassword);
     }
     
 }

@@ -102,6 +102,7 @@ public class UsuarioController {
         }
     }
 
+    //Validar cuenta para loguear (admin/basic)
     @PostMapping("/login-por-role")
     public String loginWithRole(@RequestBody Map<String, Object> loginRequest) {
         try {
@@ -118,6 +119,7 @@ public class UsuarioController {
         }
     }
 
+    //Validar usuario
     @GetMapping("/existe/{username}")
     public String checkUserExists(@PathVariable String username) {
         try {
@@ -128,6 +130,37 @@ public class UsuarioController {
             return "Error al verificar la existencia del usuario";
         } finally {
             logger.info("Método checkUserExists ejecutado");
+        }
+    }
+
+    // Endpoint para encriptar una contraseña
+    @PostMapping("/encrypt-password")
+    public String encryptPassword(@RequestBody Map<String, String> request) {
+        try {
+            String rawPassword = request.get("password");
+            return usuarioService.encryptPassword(rawPassword);
+        } catch (Exception e) {
+            logger.error("Error al encriptar la contraseña: {}", e.getMessage(), e);
+            return "Error al encriptar la contraseña";
+        } finally {
+            logger.info("Método encryptPassword ejecutado");
+        }
+    }
+
+    // Endpoint para validar una contraseña
+    @PostMapping("/validate-password")
+    public String validatePassword(@RequestBody Map<String, String> request) {
+        try {
+            String rawPassword = request.get("password");
+            String encodedPassword = request.get("encodedPassword");
+
+            boolean isValid = usuarioService.validatePassword(rawPassword, encodedPassword);
+            return isValid ? "La contraseña es válida" : "La contraseña es inválida";
+        } catch (Exception e) {
+            logger.error("Error al validar la contraseña: {}", e.getMessage(), e);
+            return "Error al validar la contraseña";
+        } finally {
+            logger.info("Método validatePassword ejecutado");
         }
     }
 
