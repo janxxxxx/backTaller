@@ -4,10 +4,18 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Optional;
 
+import javax.crypto.spec.SecretKeySpec;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+
+import javax.crypto.Cipher;
+import javax.crypto.KeyGenerator;
+import javax.crypto.SecretKey;
+import javax.crypto.spec.SecretKeySpec;
+import java.util.Base64;
 
 import TDB_PROYECT.MsAcceso.model.UsuarioModel;
 import TDB_PROYECT.MsAcceso.repository.IUsuarioRepository;
@@ -17,6 +25,10 @@ public class UsuarioService implements IUsuarioModel{
     @Autowired
     IUsuarioRepository repository;
     private final PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+
+     // Llave secreta (debe ser almacenada de forma segura, por ejemplo, en un servicio de gestión de claves)
+     private static final String SECRET_KEY = "1234567890123456"; // 16 caracteres para AES-128
+
 
     @Override
     public List<UsuarioModel> findAll() {
@@ -85,6 +97,26 @@ public class UsuarioService implements IUsuarioModel{
     @Override
     public Boolean validatePassword(String password, String encodedPassword) {
         return passwordEncoder.matches(password, encodedPassword);
+    }
+
+    
+    @Override
+    public String encryptPassword2(String password) throws Exception {
+        SecretKeySpec key = new SecretKeySpec(SECRET_KEY.getBytes(), "AES");
+        Cipher cipher = Cipher.getInstance("AES");
+        cipher.init(Cipher.ENCRYPT_MODE, key);
+        byte[] encrypted = cipher.doFinal(password.getBytes());
+        return Base64.getEncoder().encodeToString(encrypted);
+    }
+
+    @Override
+    public String decryptPassword2(String encryptPassword) throws Exception {
+        SecretKeySpec key = new SecretKeySpec(SECRET_KEY.getBytes(), "AES");
+        Cipher cipher = Cipher.getInstance("AES");
+        cipher.init(Cipher.DECRYPT_MODE, key);
+        byte[] decoded = Base64.getDecoder().decode(encryptPassword);
+        byte[] decrypted = cipher.doFinal(decoded);
+        return new String(decrypted);
     }
     
 }

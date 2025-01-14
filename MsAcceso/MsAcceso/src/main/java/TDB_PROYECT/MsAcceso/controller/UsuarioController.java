@@ -173,6 +173,26 @@ public class UsuarioController {
         return "Credenciales inválidas";
     }
 
+    @PostMapping("/encrypt")
+    public String encryptPassword2(@RequestBody Map<String, String> request) {
+        try {
+            String password = request.get("password");
+            return usuarioService.encryptPassword2(password);
+        } catch (Exception e) {
+            return "Error al encriptar la contraseña: " + e.getMessage();
+        }
+    }
+
+    @PostMapping("/decrypt")
+    public String decryptPassword(@RequestBody Map<String, String> request) {
+        try {
+            String encryptedPassword = request.get("encryptedPassword");
+            return usuarioService.decryptPassword2(encryptedPassword);
+        } catch (Exception e) {
+            return "Error al desencriptar la contraseña: " + e.getMessage();
+        }
+    }
+
     @GetMapping("/login")
     public String showLoginForm() {
         return "index.html"; // Nombre del archivo HTML sin la extensión

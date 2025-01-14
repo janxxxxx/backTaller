@@ -15,12 +15,11 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
-            .csrf(csrf -> csrf.disable()) // Nueva forma de desactivar CSRF
+            .csrf(csrf -> csrf.disable()) // Desactiva CSRF para pruebas
             .authorizeHttpRequests(auth -> auth
-                .requestMatchers("/encrypt-password", "/validate-password").permitAll() // Permite estas rutas
-                .anyRequest().authenticated() // Todas las demás requieren autenticación
+                .anyRequest().permitAll() // Permitir todas las solicitudes sin autenticación
             )
-            .httpBasic(withDefaults()); // Habilita autenticación básica (opcional para pruebas)
+            .httpBasic(withDefaults()); // Habilitar autenticación básica (opcional, no afecta si permitAll)
         return http.build();
     }
 }
