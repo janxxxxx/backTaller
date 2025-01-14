@@ -28,13 +28,13 @@ import jakarta.validation.Valid;
 @RequestMapping(Endpoints.BASE_PATH) // Usar la constante BASE_PATH
 public class ProvedoresController {
 
-    private static final Logger logger = LoggerFactory.getLogger(ProvedoresController.class); // Logger
+    private static final Logger logger = LoggerFactory.getLogger(ProvedoresController.class);
 
     @Autowired
-    ProvedoresService ProvedoresService; // Inyectar ProveedorService
+    ProvedoresService ProvedoresService;
 
     // Buscar todos los proveedores
-    @GetMapping(Endpoints.LISTAR) // Usar la constante LISTAR
+    @GetMapping(Endpoints.LISTAR)
     public ResponseEntity<Map<String, Object>> findAll() {
         logger.info("Iniciando búsqueda de todos los proveedores");
         List<modelProvedor> lista = ProvedoresService.findAll();
@@ -45,7 +45,7 @@ public class ProvedoresController {
     }
 
     // Crear nuevo proveedor
-    @PostMapping(Endpoints.CREATE) // Usar la constante CREATE
+    @PostMapping(Endpoints.CREATE)
     public ResponseEntity<String> create(@Valid @RequestBody modelProvedor model) {
         logger.info("Iniciando creación de un nuevo proveedor con ID: {}", model.getProveedor_id());
         try {
@@ -66,10 +66,11 @@ public class ProvedoresController {
     }
 
     // Editar un proveedor
-    @PutMapping(Endpoints.UPDATE) // Usar la constante UPDATE
+    @PutMapping(Endpoints.UPDATE)
     public ResponseEntity<Map<String, Object>> update(@Valid @RequestBody modelProvedor model) {
         logger.info("Iniciando edición del proveedor con ID: {}", model.getProveedor_id());
         try {
+            // Actualiza la caché automáticamente
             modelProvedor proveedor = ProvedoresService.update(model);
             Map<String, Object> response = new HashMap<>();
             response.put("mensaje", "Proveedor editado con éxito");
@@ -85,11 +86,12 @@ public class ProvedoresController {
         }
     }
 
-    // Buscar por ID
-    @GetMapping(Endpoints.GET) // Usar la constante GET
+    // Buscar por ID con caché
+    @GetMapping(Endpoints.GET)
     public ResponseEntity<modelProvedor> findById(@PathVariable int id) {
         logger.info("Buscando proveedor con ID: {}", id);
-        Optional<modelProvedor> proveedorOptional = ProvedoresService.findById(id);
+        Optional<modelProvedor> proveedorOptional = ProvedoresService.findProveedorById(id); // Usa el método con
+                                                                                             // @Cacheable
         if (proveedorOptional.isPresent()) {
             logger.info("Proveedor con ID: {} encontrado", id);
             return ResponseEntity.ok(proveedorOptional.get());
@@ -100,7 +102,7 @@ public class ProvedoresController {
     }
 
     // Eliminar un proveedor por ID
-    @DeleteMapping(Endpoints.DELETE) // Usar la constante DELETE
+    @DeleteMapping(Endpoints.DELETE)
     public ResponseEntity<String> delete(@PathVariable int id) {
         logger.info("Iniciando eliminación del proveedor con ID: {}", id);
         try {
@@ -110,7 +112,7 @@ public class ProvedoresController {
                 return ResponseEntity.status(HttpStatus.NOT_FOUND)
                         .body("Proveedor no existente. No se puede eliminar.");
             }
-            ProvedoresService.delete(id);
+            ProvedoresService.delete(id); // Elimina la caché correspondiente con @CacheEvict
             logger.info("Proveedor con ID: {} eliminado con éxito", id);
             return ResponseEntity.status(HttpStatus.OK)
                     .body("Proveedor eliminado con éxito.");

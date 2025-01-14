@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  postgres:
+    image: postgres:alpine3.14
+    container_name: database-postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: "unu2025!" 
+    ports:
+      - "5433:5432"
+    networks:
+      - tdunu2025
+
+networks:
+  tdunu2025:
+    name: ms-unu2025
