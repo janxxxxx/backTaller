@@ -16,4 +16,5 @@ public interface IUsuarioModel {
     public Boolean validatePassword(String password, String encodedPassword);
     public String encryptPassword2(String password) throws Exception;
     public String decryptPassword2(String encryptPassword) throws Exception;
+    public UsuarioModel findByNombre(String nombre);
 }

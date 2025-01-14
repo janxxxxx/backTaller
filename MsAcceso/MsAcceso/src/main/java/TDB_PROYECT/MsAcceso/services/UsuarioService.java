@@ -18,6 +18,7 @@ import javax.crypto.spec.SecretKeySpec;
 import java.util.Base64;
 
 import TDB_PROYECT.MsAcceso.model.UsuarioModel;
+import TDB_PROYECT.MsAcceso.repository.IBuscarUsuarioRepository;
 import TDB_PROYECT.MsAcceso.repository.IUsuarioRepository;
 
 @Service
@@ -25,6 +26,7 @@ public class UsuarioService implements IUsuarioModel{
     @Autowired
     IUsuarioRepository repository;
     private final PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+    private IBuscarUsuarioRepository buscarRepository;
 
      // Llave secreta (debe ser almacenada de forma segura, por ejemplo, en un servicio de gestión de claves)
      private static final String SECRET_KEY = "1234567890123456"; // 16 caracteres para AES-128
@@ -118,5 +120,19 @@ public class UsuarioService implements IUsuarioModel{
         byte[] decrypted = cipher.doFinal(decoded);
         return new String(decrypted);
     }
+
+    @Override
+    public UsuarioModel findByNombre(String nombre) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'findByNombre'");
+    }
+
+    /* 
+    @Override
+    public UsuarioModel findByNombre(String nombre) {
+        Optional<UsuarioModel> user = repository.findByNombre(nombre);
+        return user.orElse(null); // Retorna el usuario si lo encuentra, o null si no
+    }
+    */
     
 }
