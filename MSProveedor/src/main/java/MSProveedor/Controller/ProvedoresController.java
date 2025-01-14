@@ -69,20 +69,34 @@ public class ProvedoresController {
     @PutMapping(Endpoints.UPDATE)
     public ResponseEntity<Map<String, Object>> update(@Valid @RequestBody modelProvedor model) {
         logger.info("Iniciando edición del proveedor con ID: {}", model.getProveedor_id());
+        Map<String, Object> response = new HashMap<>();
         try {
-            // Actualiza la caché automáticamente
+            // Verifica que el ID no sea nulo
+            if (model.getProveedor_id() == null) {
+                response.put("mensaje", "El ID del proveedor es obligatorio.");
+                return ResponseEntity.badRequest().body(response);
+            }
+
+            // Llama al servicio para actualizar el proveedor
             modelProvedor proveedor = ProvedoresService.update(model);
-            Map<String, Object> response = new HashMap<>();
+
             response.put("mensaje", "Proveedor editado con éxito");
             response.put("proveedor", proveedor);
             logger.info("Proveedor con ID: {} editado con éxito", model.getProveedor_id());
             return ResponseEntity.ok(response);
+        } catch (IllegalArgumentException e) {
+            logger.error("Error al editar el proveedor - ID inválido: {}", model.getProveedor_id(), e);
+            response.put("mensaje", "Error: " + e.getMessage());
+            return ResponseEntity.badRequest().body(response);
+        } catch (RuntimeException e) {
+            logger.error("Error al editar el proveedor - No encontrado: {}", model.getProveedor_id(), e);
+            response.put("mensaje", "Error: " + e.getMessage());
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(response);
         } catch (Exception e) {
-            logger.error("Error al editar el proveedor con ID: {}", model.getProveedor_id(), e);
-            Map<String, Object> errorResponse = new HashMap<>();
-            errorResponse.put("mensaje", "Error al editar el proveedor");
-            errorResponse.put("error", e.getMessage());
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(errorResponse);
+            logger.error("Error inesperado al editar el proveedor con ID: {}", model.getProveedor_id(), e);
+            response.put("mensaje", "Error inesperado al editar el proveedor.");
+            response.put("error", e.getMessage());
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(response);
         }
     }
 

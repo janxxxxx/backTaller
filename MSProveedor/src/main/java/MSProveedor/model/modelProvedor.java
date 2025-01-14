@@ -14,7 +14,7 @@ public class modelProvedor {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) // Generación automática del ID
     @Column(name = "proveedor_id")
-    private int proveedor_id; // Identificador único del proveedor
+    private Integer proveedor_id; // Identificador único del proveedor
 
     @Column(name = "ruc_proveedor", unique = true, nullable = false)
     private String ruc_proveedor; // Número único de registro tributario
@@ -36,11 +36,11 @@ public class modelProvedor {
 
     // Getters y Setters
 
-    public int getProveedor_id() {
+    public Integer getProveedor_id() {
         return proveedor_id;
     }
 
-    public void setProveedor_id(int proveedor_id) {
+    public void setProveedor_id(Integer proveedor_id) {
         this.proveedor_id = proveedor_id;
     }
 

@@ -39,7 +39,24 @@ public class ProvedoresService implements IProvedoresService {
 
     @Override
     public modelProvedor update(modelProvedor provedor) {
-        return provedorRepository.save(provedor);
+        if (provedor.getProveedor_id() == null) {
+            throw new IllegalArgumentException("El ID del proveedor es obligatorio para actualizar.");
+        }
+
+        Optional<modelProvedor> existingProveedor = provedorRepository.findById(provedor.getProveedor_id());
+        if (!existingProveedor.isPresent()) {
+            throw new RuntimeException("El proveedor con ID " + provedor.getProveedor_id() + " no existe.");
+        }
+
+        modelProvedor proveedorToUpdate = existingProveedor.get();
+        proveedorToUpdate.setRuc_proveedor(provedor.getRuc_proveedor());
+        proveedorToUpdate.setNombre_proveedor(provedor.getNombre_proveedor());
+        proveedorToUpdate.setCorreo_proveedor(provedor.getCorreo_proveedor());
+        proveedorToUpdate.setTelefono_proveedor(provedor.getTelefono_proveedor());
+        proveedorToUpdate.setDireccion_proveedor(provedor.getDireccion_proveedor());
+        proveedorToUpdate.setEstado_proveedor(provedor.getEstado_proveedor());
+
+        return provedorRepository.save(proveedorToUpdate);
     }
 
     @Override
