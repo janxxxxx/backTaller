@@ -1,1 +1,36 @@
-spring.application.name=Gateway
+server:
+  port: 6001
+
+jwt:
+  secret: Key#SuperSecret$PolyglotTest#JavaMicroservices#2025unu
+
+spring:
+  application:
+    name: appgateway
+  cloud:
+    gateway:
+      default-filters:
+        - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+              allowedOrigins: "*"
+              allowedMethods: "*"
+              allowedHeaders: "*"
+      routes:      
+      - id: MsProveedores
+        uri: http://localhost:84
+        predicates:
+          - Path=/proveedores/**
+        filters:
+          - StripPrefix=1
+          - JwtAuthenticationFilter
+    #  - id: appinvoice
+    #    uri: http://localhost:82
+     #   predicates:
+     #     - Path=/invoice/**
+     #   filters:
+     #     - StripPrefix=1
+     #     - JwtAuthenticationFilter
+ 
+  
