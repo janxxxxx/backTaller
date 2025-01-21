@@ -2,11 +2,11 @@ server:
   port: 6001
 
 jwt:
-  secret: Key#SuperSecret$PolyglotTest#JavaMicroservices#2025unu
+  secret: Key#SuperSecret$PolyglotTest#JavaMicroservices#940527000
 
 spring:
   application:
-    name:  Gateway
+    name: appgateway
   cloud:
     gateway:
       default-filters:
@@ -18,10 +18,10 @@ spring:
               allowedMethods: "*"
               allowedHeaders: "*"
       routes:      
-      - id: MsProveedores
-        uri: http://localhost:8084
+      - id: appsecurity
+        uri: http://localhost:81
         predicates:
-          - Path=/proveedor/**
+          - Path=/security/**
         filters:
           - StripPrefix=1
       - id: appinvoice
@@ -46,3 +46,4 @@ spring:
           - StripPrefix=1
           - JwtAuthenticationFilter
            
+  
