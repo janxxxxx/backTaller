@@ -1,0 +1,1064 @@
+[2025-01-15 00:00:22] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2025-01-15 00:00:22] - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+[2025-01-15 00:00:52] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2025-01-15 00:00:52] - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+[2025-01-15 00:01:22] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2025-01-15 00:01:22] - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+[2025-01-15 00:01:52] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2025-01-15 00:01:52] - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+[2025-01-15 00:02:09] - GET "/proveedor/get/undefined", parameters={}
+[2025-01-15 00:02:09] - Mapped to MSProveedor.Controller.ProvedoresController#findById(int)
+[2025-01-15 00:02:09] - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+[2025-01-15 00:02:09] - Could not resolve parameter [0] in public org.springframework.http.ResponseEntity<MSProveedor.model.modelProvedor> MSProveedor.Controller.ProvedoresController.findById(int): Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "undefined"
+[2025-01-15 00:02:09] - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "undefined"]
+[2025-01-15 00:02:09] - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+[2025-01-15 00:02:09] - Completed 400 BAD_REQUEST
+[2025-01-15 00:02:09] - "ERROR" dispatch for GET "/error", parameters={}
+[2025-01-15 00:02:09] - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[2025-01-15 00:02:09] - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+[2025-01-15 00:02:09] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+[2025-01-15 00:02:09] - Writing [{timestamp=Wed Jan 15 00:02:09 PET 2025, status=400, error=Bad Request, path=/proveedor/get/undefine (truncated)...]
+[2025-01-15 00:02:09] - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+[2025-01-15 00:02:09] - Exiting from "ERROR" dispatch, status 400
+[2025-01-15 00:02:09] - GET "/proveedor/get/undefined", parameters={}
+[2025-01-15 00:02:09] - Mapped to MSProveedor.Controller.ProvedoresController#findById(int)
+[2025-01-15 00:02:09] - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+[2025-01-15 00:02:09] - Could not resolve parameter [0] in public org.springframework.http.ResponseEntity<MSProveedor.model.modelProvedor> MSProveedor.Controller.ProvedoresController.findById(int): Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "undefined"
+[2025-01-15 00:02:09] - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "undefined"]
+[2025-01-15 00:02:09] - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+[2025-01-15 00:02:09] - Completed 400 BAD_REQUEST
+[2025-01-15 00:02:09] - "ERROR" dispatch for GET "/error", parameters={}
+[2025-01-15 00:02:09] - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[2025-01-15 00:02:09] - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+[2025-01-15 00:02:09] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+[2025-01-15 00:02:09] - Writing [{timestamp=Wed Jan 15 00:02:09 PET 2025, status=400, error=Bad Request, path=/proveedor/get/undefine (truncated)...]
+[2025-01-15 00:02:09] - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+[2025-01-15 00:02:09] - Exiting from "ERROR" dispatch, status 400
+[2025-01-15 00:02:12] - GET "/proveedor/get/undefined", parameters={}
+[2025-01-15 00:02:12] - Mapped to MSProveedor.Controller.ProvedoresController#findById(int)
+[2025-01-15 00:02:12] - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+[2025-01-15 00:02:12] - Could not resolve parameter [0] in public org.springframework.http.ResponseEntity<MSProveedor.model.modelProvedor> MSProveedor.Controller.ProvedoresController.findById(int): Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "undefined"
+[2025-01-15 00:02:12] - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "undefined"]
+[2025-01-15 00:02:12] - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+[2025-01-15 00:02:12] - Completed 400 BAD_REQUEST
+[2025-01-15 00:02:12] - "ERROR" dispatch for GET "/error", parameters={}
+[2025-01-15 00:02:12] - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[2025-01-15 00:02:12] - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+[2025-01-15 00:02:12] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+[2025-01-15 00:02:12] - Writing [{timestamp=Wed Jan 15 00:02:12 PET 2025, status=400, error=Bad Request, path=/proveedor/get/undefine (truncated)...]
+[2025-01-15 00:02:12] - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+[2025-01-15 00:02:12] - Exiting from "ERROR" dispatch, status 400
+[2025-01-15 00:02:12] - GET "/proveedor/get/undefined", parameters={}
+[2025-01-15 00:02:12] - Mapped to MSProveedor.Controller.ProvedoresController#findById(int)
+[2025-01-15 00:02:12] - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+[2025-01-15 00:02:12] - Could not resolve parameter [0] in public org.springframework.http.ResponseEntity<MSProveedor.model.modelProvedor> MSProveedor.Controller.ProvedoresController.findById(int): Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "undefined"
+[2025-01-15 00:02:12] - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "undefined"]
+[2025-01-15 00:02:12] - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+[2025-01-15 00:02:12] - Completed 400 BAD_REQUEST
+[2025-01-15 00:02:12] - "ERROR" dispatch for GET "/error", parameters={}
+[2025-01-15 00:02:12] - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[2025-01-15 00:02:12] - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+[2025-01-15 00:02:12] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+[2025-01-15 00:02:12] - Writing [{timestamp=Wed Jan 15 00:02:12 PET 2025, status=400, error=Bad Request, path=/proveedor/get/undefine (truncated)...]
+[2025-01-15 00:02:12] - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+[2025-01-15 00:02:12] - Exiting from "ERROR" dispatch, status 400
+[2025-01-15 00:02:20] - GET "/proveedor/get/undefined", parameters={}
+[2025-01-15 00:02:20] - Mapped to MSProveedor.Controller.ProvedoresController#findById(int)
+[2025-01-15 00:02:20] - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+[2025-01-15 00:02:20] - Could not resolve parameter [0] in public org.springframework.http.ResponseEntity<MSProveedor.model.modelProvedor> MSProveedor.Controller.ProvedoresController.findById(int): Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "undefined"
+[2025-01-15 00:02:20] - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "undefined"]
+[2025-01-15 00:02:20] - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+[2025-01-15 00:02:20] - Completed 400 BAD_REQUEST
+[2025-01-15 00:02:20] - "ERROR" dispatch for GET "/error", parameters={}
+[2025-01-15 00:02:20] - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[2025-01-15 00:02:20] - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+[2025-01-15 00:02:20] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+[2025-01-15 00:02:20] - Writing [{timestamp=Wed Jan 15 00:02:20 PET 2025, status=400, error=Bad Request, path=/proveedor/get/undefine (truncated)...]
+[2025-01-15 00:02:20] - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+[2025-01-15 00:02:20] - Exiting from "ERROR" dispatch, status 400
+[2025-01-15 00:02:20] - GET "/proveedor/get/undefined", parameters={}
+[2025-01-15 00:02:20] - Mapped to MSProveedor.Controller.ProvedoresController#findById(int)
+[2025-01-15 00:02:20] - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+[2025-01-15 00:02:20] - Could not resolve parameter [0] in public org.springframework.http.ResponseEntity<MSProveedor.model.modelProvedor> MSProveedor.Controller.ProvedoresController.findById(int): Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "undefined"
+[2025-01-15 00:02:20] - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "undefined"]
+[2025-01-15 00:02:20] - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+[2025-01-15 00:02:20] - Completed 400 BAD_REQUEST
+[2025-01-15 00:02:20] - "ERROR" dispatch for GET "/error", parameters={}
+[2025-01-15 00:02:20] - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[2025-01-15 00:02:20] - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+[2025-01-15 00:02:20] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+[2025-01-15 00:02:20] - Writing [{timestamp=Wed Jan 15 00:02:20 PET 2025, status=400, error=Bad Request, path=/proveedor/get/undefine (truncated)...]
+[2025-01-15 00:02:20] - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+[2025-01-15 00:02:20] - Exiting from "ERROR" dispatch, status 400
+[2025-01-15 00:02:22] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2025-01-15 00:02:22] - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+[2025-01-15 00:02:24] - GET "/proveedor/get/6", parameters={}
+[2025-01-15 00:02:24] - Mapped to MSProveedor.Controller.ProvedoresController#findById(int)
+[2025-01-15 00:02:24] - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+[2025-01-15 00:02:24] - Buscando proveedor con ID: 6
+[2025-01-15 00:02:24] - SERVICE: Get Find By id: 6
+[2025-01-15 00:02:24] - Found thread-bound EntityManager [SessionImpl(955288742<open>)] for JPA transaction
+[2025-01-15 00:02:24] - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+[2025-01-15 00:02:24] - Setting JDBC Connection [HikariProxyConnection@1198361045 wrapping org.postgresql.jdbc.PgConnection@30c8ae37] read-only
+[2025-01-15 00:02:24] - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[2025-01-15 00:02:24] - begin
+[2025-01-15 00:02:24] - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@14317607]
+[2025-01-15 00:02:24] - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+[2025-01-15 00:02:24] - Initializer list:
+	  MSProveedor.model.modelProvedor -> EntityResultInitializer(MSProveedor.model.modelProvedor)@786079303 (SingleTableEntityPersister(MSProveedor.model.modelProvedor))
+
+[2025-01-15 00:02:24] - select mp1_0.proveedor_id,mp1_0.correo_proveedor,mp1_0.direccion_proveedor,mp1_0.estado_proveedor,mp1_0.nombre_proveedor,mp1_0.ruc_proveedor,mp1_0.telefono_proveedor from proveedores mp1_0 where mp1_0.proveedor_id=?
+[2025-01-15 00:02:24] - (EntityResultInitializer) Hydrated EntityKey (MSProveedor.model.modelProvedor): 6
+[2025-01-15 00:02:24] - (EntityResultInitializer) Created new entity instance [MSProveedor.model.modelProvedor#6] : 652573258
+[2025-01-15 00:02:24] - Extracted JDBC value [1] - [proveedor1@email.com]
+[2025-01-15 00:02:24] - Extracted JDBC value [2] - [Av. Principal 123]
+[2025-01-15 00:02:24] - Extracted JDBC value [3] - [activo]
+[2025-01-15 00:02:24] - Extracted JDBC value [4] - [Proveedor jans333]
+[2025-01-15 00:02:24] - Extracted JDBC value [5] - [2045111111]
+[2025-01-15 00:02:24] - Extracted JDBC value [6] - [987654321]
+[2025-01-15 00:02:24] - (EntityResultInitializer) Done materializing entityInstance : MSProveedor.model.modelProvedor#6
+[2025-01-15 00:02:24] - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@5cb7e077
+[2025-01-15 00:02:24] - Initiating transaction commit
+[2025-01-15 00:02:24] - Committing JPA transaction on EntityManager [SessionImpl(955288742<open>)]
+[2025-01-15 00:02:24] - committing
+[2025-01-15 00:02:24] - Resetting read-only flag of JDBC Connection [HikariProxyConnection@1198361045 wrapping org.postgresql.jdbc.PgConnection@30c8ae37]
+[2025-01-15 00:02:24] - Not closing pre-bound JPA EntityManager after transaction
+[2025-01-15 00:02:24] - Proveedor con ID: 6 encontrado
+[2025-01-15 00:02:24] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+[2025-01-15 00:02:24] - Writing [MSProveedor.model.modelProvedor@26e57a4a]
+[2025-01-15 00:02:24] - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+[2025-01-15 00:02:24] - Completed 200 OK
+[2025-01-15 00:02:24] - GET "/proveedor/get/6", parameters={}
+[2025-01-15 00:02:24] - Mapped to MSProveedor.Controller.ProvedoresController#findById(int)
+[2025-01-15 00:02:24] - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+[2025-01-15 00:02:24] - Buscando proveedor con ID: 6
+[2025-01-15 00:02:24] - SERVICE: Get Find By id: 6
+[2025-01-15 00:02:24] - Found thread-bound EntityManager [SessionImpl(2121963027<open>)] for JPA transaction
+[2025-01-15 00:02:24] - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+[2025-01-15 00:02:24] - Setting JDBC Connection [HikariProxyConnection@709745548 wrapping org.postgresql.jdbc.PgConnection@30c8ae37] read-only
+[2025-01-15 00:02:24] - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[2025-01-15 00:02:24] - begin
+[2025-01-15 00:02:24] - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@46891bc9]
+[2025-01-15 00:02:24] - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+[2025-01-15 00:02:24] - Initializer list:
+	  MSProveedor.model.modelProvedor -> EntityResultInitializer(MSProveedor.model.modelProvedor)@1103372553 (SingleTableEntityPersister(MSProveedor.model.modelProvedor))
+
+[2025-01-15 00:02:24] - select mp1_0.proveedor_id,mp1_0.correo_proveedor,mp1_0.direccion_proveedor,mp1_0.estado_proveedor,mp1_0.nombre_proveedor,mp1_0.ruc_proveedor,mp1_0.telefono_proveedor from proveedores mp1_0 where mp1_0.proveedor_id=?
+[2025-01-15 00:02:24] - (EntityResultInitializer) Hydrated EntityKey (MSProveedor.model.modelProvedor): 6
+[2025-01-15 00:02:24] - (EntityResultInitializer) Created new entity instance [MSProveedor.model.modelProvedor#6] : 556321563
+[2025-01-15 00:02:24] - Extracted JDBC value [1] - [proveedor1@email.com]
+[2025-01-15 00:02:24] - Extracted JDBC value [2] - [Av. Principal 123]
+[2025-01-15 00:02:24] - Extracted JDBC value [3] - [activo]
+[2025-01-15 00:02:24] - Extracted JDBC value [4] - [Proveedor jans333]
+[2025-01-15 00:02:24] - Extracted JDBC value [5] - [2045111111]
+[2025-01-15 00:02:24] - Extracted JDBC value [6] - [987654321]
+[2025-01-15 00:02:24] - (EntityResultInitializer) Done materializing entityInstance : MSProveedor.model.modelProvedor#6
+[2025-01-15 00:02:24] - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@41847a5e
+[2025-01-15 00:02:24] - Initiating transaction commit
+[2025-01-15 00:02:24] - Committing JPA transaction on EntityManager [SessionImpl(2121963027<open>)]
+[2025-01-15 00:02:24] - committing
+[2025-01-15 00:02:24] - Resetting read-only flag of JDBC Connection [HikariProxyConnection@709745548 wrapping org.postgresql.jdbc.PgConnection@30c8ae37]
+[2025-01-15 00:02:24] - Not closing pre-bound JPA EntityManager after transaction
+[2025-01-15 00:02:24] - Proveedor con ID: 6 encontrado
+[2025-01-15 00:02:24] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+[2025-01-15 00:02:24] - Writing [MSProveedor.model.modelProvedor@2128cb1b]
+[2025-01-15 00:02:24] - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+[2025-01-15 00:02:24] - Completed 200 OK
+[2025-01-15 00:02:52] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2025-01-15 00:02:52] - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+[2025-01-15 00:03:21] - GET "/proveedor/listar", parameters={}
+[2025-01-15 00:03:21] - Mapped to MSProveedor.Controller.ProvedoresController#findAll()
+[2025-01-15 00:03:21] - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+[2025-01-15 00:03:21] - Iniciando búsqueda de todos los proveedores
+[2025-01-15 00:03:21] - Found thread-bound EntityManager [SessionImpl(2081808081<open>)] for JPA transaction
+[2025-01-15 00:03:21] - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+[2025-01-15 00:03:21] - Setting JDBC Connection [HikariProxyConnection@38190686 wrapping org.postgresql.jdbc.PgConnection@30c8ae37] read-only
+[2025-01-15 00:03:21] - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[2025-01-15 00:03:21] - begin
+[2025-01-15 00:03:21] - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@472ba804]
+[2025-01-15 00:03:21] - Created new SQL alias : mp1_0
+[2025-01-15 00:03:21] - Registration of TableGroup [StandardTableGroup(MSProveedor.model.modelProvedor(156))] with identifierForTableGroup [MSProveedor.model.modelProvedor] for NavigablePath [MSProveedor.model.modelProvedor] 
+[2025-01-15 00:03:21] - DomainResult Graph:
+ \-EntityResultImpl [MSProveedor.model.modelProvedor(156)]
+ |  +-BasicFetch [MSProveedor.model.modelProvedor(156).correo_proveedor]
+ |  +-BasicFetch [MSProveedor.model.modelProvedor(156).direccion_proveedor]
+ |  +-BasicFetch [MSProveedor.model.modelProvedor(156).estado_proveedor]
+ |  +-BasicFetch [MSProveedor.model.modelProvedor(156).nombre_proveedor]
+ |  +-BasicFetch [MSProveedor.model.modelProvedor(156).ruc_proveedor]
+ |  \-BasicFetch [MSProveedor.model.modelProvedor(156).telefono_proveedor]
+
+[2025-01-15 00:03:21] - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (mp1 : MSProveedor.model.modelProvedor(156)) {
+          primaryTableReference : proveedores as mp1_0
+        }
+      }
+    }
+
+[2025-01-15 00:03:21] - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+[2025-01-15 00:03:21] - Initializer list:
+	  MSProveedor.model.modelProvedor(156) -> EntityResultInitializer(MSProveedor.model.modelProvedor(156))@1524027934 (SingleTableEntityPersister(MSProveedor.model.modelProvedor))
+
+[2025-01-15 00:03:21] - select mp1_0.proveedor_id,mp1_0.correo_proveedor,mp1_0.direccion_proveedor,mp1_0.estado_proveedor,mp1_0.nombre_proveedor,mp1_0.ruc_proveedor,mp1_0.telefono_proveedor from proveedores mp1_0
+[2025-01-15 00:03:21] - Extracted JDBC value [0] - [15]
+[2025-01-15 00:03:21] - (EntityResultInitializer) Hydrated EntityKey (MSProveedor.model.modelProvedor(156)): 15
+[2025-01-15 00:03:21] - (EntityResultInitializer) Created new entity instance [MSProveedor.model.modelProvedor(156)#15] : 97250267
+[2025-01-15 00:03:21] - Extracted JDBC value [1] - [proveedor3@email.com]
+[2025-01-15 00:03:21] - Extracted JDBC value [2] - [Calle Secundaria 45]
+[2025-01-15 00:03:21] - Extracted JDBC value [3] - [inactivo]
+[2025-01-15 00:03:21] - Extracted JDBC value [4] - [Proveedor 200]
+[2025-01-15 00:03:21] - Extracted JDBC value [5] - [20645123987]
+[2025-01-15 00:03:21] - Extracted JDBC value [6] - [923456789]
+[2025-01-15 00:03:21] - (EntityResultInitializer) Done materializing entityInstance : MSProveedor.model.modelProvedor(156)#15
+[2025-01-15 00:03:21] - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@69618f5e
+[2025-01-15 00:03:21] - Extracted JDBC value [0] - [22]
+[2025-01-15 00:03:21] - (EntityResultInitializer) Hydrated EntityKey (MSProveedor.model.modelProvedor(156)): 22
+[2025-01-15 00:03:21] - (EntityResultInitializer) Created new entity instance [MSProveedor.model.modelProvedor(156)#22] : 1360043864
+[2025-01-15 00:03:21] - Extracted JDBC value [1] - [proveedor4@email.com]
+[2025-01-15 00:03:21] - Extracted JDBC value [2] - [Av. Principal 123]
+[2025-01-15 00:03:21] - Extracted JDBC value [3] - [inactivo]
+[2025-01-15 00:03:21] - Extracted JDBC value [4] - []
+[2025-01-15 00:03:21] - Extracted JDBC value [5] - [6232111]
+[2025-01-15 00:03:21] - Extracted JDBC value [6] - [956789123]
+[2025-01-15 00:03:21] - (EntityResultInitializer) Done materializing entityInstance : MSProveedor.model.modelProvedor(156)#22
+[2025-01-15 00:03:21] - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@69618f5e
+[2025-01-15 00:03:21] - Extracted JDBC value [0] - [23]
+[2025-01-15 00:03:21] - (EntityResultInitializer) Hydrated EntityKey (MSProveedor.model.modelProvedor(156)): 23
+[2025-01-15 00:03:21] - (EntityResultInitializer) Created new entity instance [MSProveedor.model.modelProvedor(156)#23] : 266872558
+[2025-01-15 00:03:21] - Extracted JDBC value [1] - [proveedor3@email.com]
+[2025-01-15 00:03:21] - Extracted JDBC value [2] - [Pasaje Flores 89]
+[2025-01-15 00:03:21] - Extracted JDBC value [3] - [inactivo]
+[2025-01-15 00:03:21] - Extracted JDBC value [4] - [Por 3333]
+[2025-01-15 00:03:21] - Extracted JDBC value [5] - [20456812345111]
+[2025-01-15 00:03:21] - Extracted JDBC value [6] - [912345678]
+[2025-01-15 00:03:21] - (EntityResultInitializer) Done materializing entityInstance : MSProveedor.model.modelProvedor(156)#23
+[2025-01-15 00:03:21] - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@69618f5e
+[2025-01-15 00:03:21] - Extracted JDBC value [0] - [24]
+[2025-01-15 00:03:21] - (EntityResultInitializer) Hydrated EntityKey (MSProveedor.model.modelProvedor(156)): 24
+[2025-01-15 00:03:21] - (EntityResultInitializer) Created new entity instance [MSProveedor.model.modelProvedor(156)#24] : 1428652539
+[2025-01-15 00:03:21] - Extracted JDBC value [1] - [proveedor3@email.com]
+[2025-01-15 00:03:21] - Extracted JDBC value [2] - [Jr. Los Pinos 567]
+[2025-01-15 00:03:21] - Extracted JDBC value [3] - [inactivo]
+[2025-01-15 00:03:21] - Extracted JDBC value [4] - [Por 3333]
+[2025-01-15 00:03:21] - Extracted JDBC value [5] - [2045681234522]
+[2025-01-15 00:03:21] - Extracted JDBC value [6] - [912345678]
+[2025-01-15 00:03:21] - (EntityResultInitializer) Done materializing entityInstance : MSProveedor.model.modelProvedor(156)#24
+[2025-01-15 00:03:21] - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@69618f5e
+[2025-01-15 00:03:21] - Extracted JDBC value [0] - [6]
+[2025-01-15 00:03:21] - (EntityResultInitializer) Hydrated EntityKey (MSProveedor.model.modelProvedor(156)): 6
+[2025-01-15 00:03:21] - (EntityResultInitializer) Created new entity instance [MSProveedor.model.modelProvedor(156)#6] : 819588990
+[2025-01-15 00:03:21] - Extracted JDBC value [1] - [proveedor1@email.com]
+[2025-01-15 00:03:21] - Extracted JDBC value [2] - [Av. Principal 123]
+[2025-01-15 00:03:21] - Extracted JDBC value [3] - [activo]
+[2025-01-15 00:03:21] - Extracted JDBC value [4] - [Proveedor jans333]
+[2025-01-15 00:03:21] - Extracted JDBC value [5] - [2045111111]
+[2025-01-15 00:03:21] - Extracted JDBC value [6] - [987654321]
+[2025-01-15 00:03:21] - (EntityResultInitializer) Done materializing entityInstance : MSProveedor.model.modelProvedor(156)#6
+[2025-01-15 00:03:21] - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@69618f5e
+[2025-01-15 00:03:21] - Initiating transaction commit
+[2025-01-15 00:03:21] - Committing JPA transaction on EntityManager [SessionImpl(2081808081<open>)]
+[2025-01-15 00:03:21] - committing
+[2025-01-15 00:03:21] - Resetting read-only flag of JDBC Connection [HikariProxyConnection@38190686 wrapping org.postgresql.jdbc.PgConnection@30c8ae37]
+[2025-01-15 00:03:21] - Not closing pre-bound JPA EntityManager after transaction
+[2025-01-15 00:03:21] - Se encontraron 5 proveedores
+[2025-01-15 00:03:21] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+[2025-01-15 00:03:21] - Writing [{Lista de todos los proveedores existentes=[MSProveedor.model.modelProvedor@5cbebdb, MSProveedor.mod (truncated)...]
+[2025-01-15 00:03:21] - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+[2025-01-15 00:03:21] - Completed 200 OK
+[2025-01-15 00:03:21] - GET "/proveedor/listar", parameters={}
+[2025-01-15 00:03:21] - Mapped to MSProveedor.Controller.ProvedoresController#findAll()
+[2025-01-15 00:03:21] - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+[2025-01-15 00:03:21] - Iniciando búsqueda de todos los proveedores
+[2025-01-15 00:03:21] - Found thread-bound EntityManager [SessionImpl(1642297132<open>)] for JPA transaction
+[2025-01-15 00:03:21] - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+[2025-01-15 00:03:21] - Setting JDBC Connection [HikariProxyConnection@1320287711 wrapping org.postgresql.jdbc.PgConnection@30c8ae37] read-only
+[2025-01-15 00:03:21] - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[2025-01-15 00:03:21] - begin
+[2025-01-15 00:03:21] - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@49c401f3]
+[2025-01-15 00:03:21] - Created new SQL alias : mp1_0
+[2025-01-15 00:03:21] - Registration of TableGroup [StandardTableGroup(MSProveedor.model.modelProvedor(157))] with identifierForTableGroup [MSProveedor.model.modelProvedor] for NavigablePath [MSProveedor.model.modelProvedor] 
+[2025-01-15 00:03:21] - DomainResult Graph:
+ \-EntityResultImpl [MSProveedor.model.modelProvedor(157)]
+ |  +-BasicFetch [MSProveedor.model.modelProvedor(157).correo_proveedor]
+ |  +-BasicFetch [MSProveedor.model.modelProvedor(157).direccion_proveedor]
+ |  +-BasicFetch [MSProveedor.model.modelProvedor(157).estado_proveedor]
+ |  +-BasicFetch [MSProveedor.model.modelProvedor(157).nombre_proveedor]
+ |  +-BasicFetch [MSProveedor.model.modelProvedor(157).ruc_proveedor]
+ |  \-BasicFetch [MSProveedor.model.modelProvedor(157).telefono_proveedor]
+
+[2025-01-15 00:03:21] - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (mp1 : MSProveedor.model.modelProvedor(157)) {
+          primaryTableReference : proveedores as mp1_0
+        }
+      }
+    }
+
+[2025-01-15 00:03:21] - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+[2025-01-15 00:03:21] - Initializer list:
+	  MSProveedor.model.modelProvedor(157) -> EntityResultInitializer(MSProveedor.model.modelProvedor(157))@613007903 (SingleTableEntityPersister(MSProveedor.model.modelProvedor))
+
+[2025-01-15 00:03:21] - select mp1_0.proveedor_id,mp1_0.correo_proveedor,mp1_0.direccion_proveedor,mp1_0.estado_proveedor,mp1_0.nombre_proveedor,mp1_0.ruc_proveedor,mp1_0.telefono_proveedor from proveedores mp1_0
+[2025-01-15 00:03:21] - Extracted JDBC value [0] - [15]
+[2025-01-15 00:03:21] - (EntityResultInitializer) Hydrated EntityKey (MSProveedor.model.modelProvedor(157)): 15
+[2025-01-15 00:03:21] - (EntityResultInitializer) Created new entity instance [MSProveedor.model.modelProvedor(157)#15] : 1367536446
+[2025-01-15 00:03:21] - Extracted JDBC value [1] - [proveedor3@email.com]
+[2025-01-15 00:03:21] - Extracted JDBC value [2] - [Calle Secundaria 45]
+[2025-01-15 00:03:21] - Extracted JDBC value [3] - [inactivo]
+[2025-01-15 00:03:21] - Extracted JDBC value [4] - [Proveedor 200]
+[2025-01-15 00:03:21] - Extracted JDBC value [5] - [20645123987]
+[2025-01-15 00:03:21] - Extracted JDBC value [6] - [923456789]
+[2025-01-15 00:03:21] - (EntityResultInitializer) Done materializing entityInstance : MSProveedor.model.modelProvedor(157)#15
+[2025-01-15 00:03:21] - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@3bf14a2b
+[2025-01-15 00:03:21] - Extracted JDBC value [0] - [22]
+[2025-01-15 00:03:21] - (EntityResultInitializer) Hydrated EntityKey (MSProveedor.model.modelProvedor(157)): 22
+[2025-01-15 00:03:21] - (EntityResultInitializer) Created new entity instance [MSProveedor.model.modelProvedor(157)#22] : 233564732
+[2025-01-15 00:03:21] - Extracted JDBC value [1] - [proveedor4@email.com]
+[2025-01-15 00:03:21] - Extracted JDBC value [2] - [Av. Principal 123]
+[2025-01-15 00:03:21] - Extracted JDBC value [3] - [inactivo]
+[2025-01-15 00:03:21] - Extracted JDBC value [4] - []
+[2025-01-15 00:03:21] - Extracted JDBC value [5] - [6232111]
+[2025-01-15 00:03:21] - Extracted JDBC value [6] - [956789123]
+[2025-01-15 00:03:21] - (EntityResultInitializer) Done materializing entityInstance : MSProveedor.model.modelProvedor(157)#22
+[2025-01-15 00:03:21] - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@3bf14a2b
+[2025-01-15 00:03:21] - Extracted JDBC value [0] - [23]
+[2025-01-15 00:03:21] - (EntityResultInitializer) Hydrated EntityKey (MSProveedor.model.modelProvedor(157)): 23
+[2025-01-15 00:03:21] - (EntityResultInitializer) Created new entity instance [MSProveedor.model.modelProvedor(157)#23] : 1523965541
+[2025-01-15 00:03:21] - Extracted JDBC value [1] - [proveedor3@email.com]
+[2025-01-15 00:03:21] - Extracted JDBC value [2] - [Pasaje Flores 89]
+[2025-01-15 00:03:21] - Extracted JDBC value [3] - [inactivo]
+[2025-01-15 00:03:21] - Extracted JDBC value [4] - [Por 3333]
+[2025-01-15 00:03:21] - Extracted JDBC value [5] - [20456812345111]
+[2025-01-15 00:03:21] - Extracted JDBC value [6] - [912345678]
+[2025-01-15 00:03:21] - (EntityResultInitializer) Done materializing entityInstance : MSProveedor.model.modelProvedor(157)#23
+[2025-01-15 00:03:21] - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@3bf14a2b
+[2025-01-15 00:03:21] - Extracted JDBC value [0] - [24]
+[2025-01-15 00:03:21] - (EntityResultInitializer) Hydrated EntityKey (MSProveedor.model.modelProvedor(157)): 24
+[2025-01-15 00:03:21] - (EntityResultInitializer) Created new entity instance [MSProveedor.model.modelProvedor(157)#24] : 470342914
+[2025-01-15 00:03:21] - Extracted JDBC value [1] - [proveedor3@email.com]
+[2025-01-15 00:03:21] - Extracted JDBC value [2] - [Jr. Los Pinos 567]
+[2025-01-15 00:03:21] - Extracted JDBC value [3] - [inactivo]
+[2025-01-15 00:03:21] - Extracted JDBC value [4] - [Por 3333]
+[2025-01-15 00:03:21] - Extracted JDBC value [5] - [2045681234522]
+[2025-01-15 00:03:21] - Extracted JDBC value [6] - [912345678]
+[2025-01-15 00:03:21] - (EntityResultInitializer) Done materializing entityInstance : MSProveedor.model.modelProvedor(157)#24
+[2025-01-15 00:03:21] - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@3bf14a2b
+[2025-01-15 00:03:21] - Extracted JDBC value [0] - [6]
+[2025-01-15 00:03:21] - (EntityResultInitializer) Hydrated EntityKey (MSProveedor.model.modelProvedor(157)): 6
+[2025-01-15 00:03:21] - (EntityResultInitializer) Created new entity instance [MSProveedor.model.modelProvedor(157)#6] : 756640954
+[2025-01-15 00:03:21] - Extracted JDBC value [1] - [proveedor1@email.com]
+[2025-01-15 00:03:21] - Extracted JDBC value [2] - [Av. Principal 123]
+[2025-01-15 00:03:21] - Extracted JDBC value [3] - [activo]
+[2025-01-15 00:03:21] - Extracted JDBC value [4] - [Proveedor jans333]
+[2025-01-15 00:03:21] - Extracted JDBC value [5] - [2045111111]
+[2025-01-15 00:03:21] - Extracted JDBC value [6] - [987654321]
+[2025-01-15 00:03:21] - (EntityResultInitializer) Done materializing entityInstance : MSProveedor.model.modelProvedor(157)#6
+[2025-01-15 00:03:21] - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@3bf14a2b
+[2025-01-15 00:03:21] - Initiating transaction commit
+[2025-01-15 00:03:21] - Committing JPA transaction on EntityManager [SessionImpl(1642297132<open>)]
+[2025-01-15 00:03:21] - committing
+[2025-01-15 00:03:21] - Resetting read-only flag of JDBC Connection [HikariProxyConnection@1320287711 wrapping org.postgresql.jdbc.PgConnection@30c8ae37]
+[2025-01-15 00:03:21] - Not closing pre-bound JPA EntityManager after transaction
+[2025-01-15 00:03:21] - Se encontraron 5 proveedores
+[2025-01-15 00:03:21] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+[2025-01-15 00:03:21] - Writing [{Lista de todos los proveedores existentes=[MSProveedor.model.modelProvedor@5182f33e, MSProveedor.mo (truncated)...]
+[2025-01-15 00:03:21] - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+[2025-01-15 00:03:21] - Completed 200 OK
+[2025-01-15 00:03:22] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2025-01-15 00:03:22] - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+[2025-01-15 00:03:22] - GET "/proveedor/listar", parameters={}
+[2025-01-15 00:03:22] - Mapped to MSProveedor.Controller.ProvedoresController#findAll()
+[2025-01-15 00:03:22] - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+[2025-01-15 00:03:22] - Iniciando búsqueda de todos los proveedores
+[2025-01-15 00:03:22] - Found thread-bound EntityManager [SessionImpl(1152827529<open>)] for JPA transaction
+[2025-01-15 00:03:22] - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+[2025-01-15 00:03:22] - Setting JDBC Connection [HikariProxyConnection@1330203557 wrapping org.postgresql.jdbc.PgConnection@30c8ae37] read-only
+[2025-01-15 00:03:22] - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[2025-01-15 00:03:22] - begin
+[2025-01-15 00:03:22] - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@5a2d2b59]
+[2025-01-15 00:03:22] - Created new SQL alias : mp1_0
+[2025-01-15 00:03:22] - Registration of TableGroup [StandardTableGroup(MSProveedor.model.modelProvedor(158))] with identifierForTableGroup [MSProveedor.model.modelProvedor] for NavigablePath [MSProveedor.model.modelProvedor] 
+[2025-01-15 00:03:22] - DomainResult Graph:
+ \-EntityResultImpl [MSProveedor.model.modelProvedor(158)]
+ |  +-BasicFetch [MSProveedor.model.modelProvedor(158).correo_proveedor]
+ |  +-BasicFetch [MSProveedor.model.modelProvedor(158).direccion_proveedor]
+ |  +-BasicFetch [MSProveedor.model.modelProvedor(158).estado_proveedor]
+ |  +-BasicFetch [MSProveedor.model.modelProvedor(158).nombre_proveedor]
+ |  +-BasicFetch [MSProveedor.model.modelProvedor(158).ruc_proveedor]
+ |  \-BasicFetch [MSProveedor.model.modelProvedor(158).telefono_proveedor]
+
+[2025-01-15 00:03:22] - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (mp1 : MSProveedor.model.modelProvedor(158)) {
+          primaryTableReference : proveedores as mp1_0
+        }
+      }
+    }
+
+[2025-01-15 00:03:22] - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+[2025-01-15 00:03:22] - Initializer list:
+	  MSProveedor.model.modelProvedor(158) -> EntityResultInitializer(MSProveedor.model.modelProvedor(158))@1533592802 (SingleTableEntityPersister(MSProveedor.model.modelProvedor))
+
+[2025-01-15 00:03:22] - select mp1_0.proveedor_id,mp1_0.correo_proveedor,mp1_0.direccion_proveedor,mp1_0.estado_proveedor,mp1_0.nombre_proveedor,mp1_0.ruc_proveedor,mp1_0.telefono_proveedor from proveedores mp1_0
+[2025-01-15 00:03:22] - Extracted JDBC value [0] - [15]
+[2025-01-15 00:03:22] - (EntityResultInitializer) Hydrated EntityKey (MSProveedor.model.modelProvedor(158)): 15
+[2025-01-15 00:03:22] - (EntityResultInitializer) Created new entity instance [MSProveedor.model.modelProvedor(158)#15] : 2089063623
+[2025-01-15 00:03:22] - Extracted JDBC value [1] - [proveedor3@email.com]
+[2025-01-15 00:03:22] - Extracted JDBC value [2] - [Calle Secundaria 45]
+[2025-01-15 00:03:22] - Extracted JDBC value [3] - [inactivo]
+[2025-01-15 00:03:22] - Extracted JDBC value [4] - [Proveedor 200]
+[2025-01-15 00:03:22] - Extracted JDBC value [5] - [20645123987]
+[2025-01-15 00:03:22] - Extracted JDBC value [6] - [923456789]
+[2025-01-15 00:03:22] - (EntityResultInitializer) Done materializing entityInstance : MSProveedor.model.modelProvedor(158)#15
+[2025-01-15 00:03:22] - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@61560061
+[2025-01-15 00:03:22] - Extracted JDBC value [0] - [22]
+[2025-01-15 00:03:22] - (EntityResultInitializer) Hydrated EntityKey (MSProveedor.model.modelProvedor(158)): 22
+[2025-01-15 00:03:22] - (EntityResultInitializer) Created new entity instance [MSProveedor.model.modelProvedor(158)#22] : 1206665396
+[2025-01-15 00:03:22] - Extracted JDBC value [1] - [proveedor4@email.com]
+[2025-01-15 00:03:22] - Extracted JDBC value [2] - [Av. Principal 123]
+[2025-01-15 00:03:22] - Extracted JDBC value [3] - [inactivo]
+[2025-01-15 00:03:22] - Extracted JDBC value [4] - []
+[2025-01-15 00:03:22] - Extracted JDBC value [5] - [6232111]
+[2025-01-15 00:03:22] - Extracted JDBC value [6] - [956789123]
+[2025-01-15 00:03:22] - (EntityResultInitializer) Done materializing entityInstance : MSProveedor.model.modelProvedor(158)#22
+[2025-01-15 00:03:22] - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@61560061
+[2025-01-15 00:03:22] - Extracted JDBC value [0] - [23]
+[2025-01-15 00:03:22] - (EntityResultInitializer) Hydrated EntityKey (MSProveedor.model.modelProvedor(158)): 23
+[2025-01-15 00:03:22] - (EntityResultInitializer) Created new entity instance [MSProveedor.model.modelProvedor(158)#23] : 728741582
+[2025-01-15 00:03:22] - Extracted JDBC value [1] - [proveedor3@email.com]
+[2025-01-15 00:03:22] - Extracted JDBC value [2] - [Pasaje Flores 89]
+[2025-01-15 00:03:22] - Extracted JDBC value [3] - [inactivo]
+[2025-01-15 00:03:22] - Extracted JDBC value [4] - [Por 3333]
+[2025-01-15 00:03:22] - Extracted JDBC value [5] - [20456812345111]
+[2025-01-15 00:03:22] - Extracted JDBC value [6] - [912345678]
+[2025-01-15 00:03:22] - (EntityResultInitializer) Done materializing entityInstance : MSProveedor.model.modelProvedor(158)#23
+[2025-01-15 00:03:22] - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@61560061
+[2025-01-15 00:03:22] - Extracted JDBC value [0] - [24]
+[2025-01-15 00:03:22] - (EntityResultInitializer) Hydrated EntityKey (MSProveedor.model.modelProvedor(158)): 24
+[2025-01-15 00:03:22] - (EntityResultInitializer) Created new entity instance [MSProveedor.model.modelProvedor(158)#24] : 1930767816
+[2025-01-15 00:03:22] - Extracted JDBC value [1] - [proveedor3@email.com]
+[2025-01-15 00:03:22] - Extracted JDBC value [2] - [Jr. Los Pinos 567]
+[2025-01-15 00:03:22] - Extracted JDBC value [3] - [inactivo]
+[2025-01-15 00:03:22] - Extracted JDBC value [4] - [Por 3333]
+[2025-01-15 00:03:22] - Extracted JDBC value [5] - [2045681234522]
+[2025-01-15 00:03:22] - Extracted JDBC value [6] - [912345678]
+[2025-01-15 00:03:22] - (EntityResultInitializer) Done materializing entityInstance : MSProveedor.model.modelProvedor(158)#24
+[2025-01-15 00:03:22] - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@61560061
+[2025-01-15 00:03:22] - Extracted JDBC value [0] - [6]
+[2025-01-15 00:03:22] - (EntityResultInitializer) Hydrated EntityKey (MSProveedor.model.modelProvedor(158)): 6
+[2025-01-15 00:03:22] - (EntityResultInitializer) Created new entity instance [MSProveedor.model.modelProvedor(158)#6] : 571567811
+[2025-01-15 00:03:22] - Extracted JDBC value [1] - [proveedor1@email.com]
+[2025-01-15 00:03:22] - Extracted JDBC value [2] - [Av. Principal 123]
+[2025-01-15 00:03:22] - Extracted JDBC value [3] - [activo]
+[2025-01-15 00:03:22] - Extracted JDBC value [4] - [Proveedor jans333]
+[2025-01-15 00:03:22] - Extracted JDBC value [5] - [2045111111]
+[2025-01-15 00:03:22] - Extracted JDBC value [6] - [987654321]
+[2025-01-15 00:03:22] - (EntityResultInitializer) Done materializing entityInstance : MSProveedor.model.modelProvedor(158)#6
+[2025-01-15 00:03:22] - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@61560061
+[2025-01-15 00:03:22] - Initiating transaction commit
+[2025-01-15 00:03:22] - Committing JPA transaction on EntityManager [SessionImpl(1152827529<open>)]
+[2025-01-15 00:03:22] - committing
+[2025-01-15 00:03:22] - Resetting read-only flag of JDBC Connection [HikariProxyConnection@1330203557 wrapping org.postgresql.jdbc.PgConnection@30c8ae37]
+[2025-01-15 00:03:22] - Not closing pre-bound JPA EntityManager after transaction
+[2025-01-15 00:03:22] - Se encontraron 5 proveedores
+[2025-01-15 00:03:22] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+[2025-01-15 00:03:22] - Writing [{Lista de todos los proveedores existentes=[MSProveedor.model.modelProvedor@7c8494c7, MSProveedor.mo (truncated)...]
+[2025-01-15 00:03:22] - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+[2025-01-15 00:03:22] - Completed 200 OK
+[2025-01-15 00:03:22] - GET "/proveedor/listar", parameters={}
+[2025-01-15 00:03:22] - Mapped to MSProveedor.Controller.ProvedoresController#findAll()
+[2025-01-15 00:03:22] - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+[2025-01-15 00:03:22] - Iniciando búsqueda de todos los proveedores
+[2025-01-15 00:03:22] - Found thread-bound EntityManager [SessionImpl(576257723<open>)] for JPA transaction
+[2025-01-15 00:03:22] - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+[2025-01-15 00:03:22] - Setting JDBC Connection [HikariProxyConnection@1285855124 wrapping org.postgresql.jdbc.PgConnection@30c8ae37] read-only
+[2025-01-15 00:03:22] - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[2025-01-15 00:03:22] - begin
+[2025-01-15 00:03:22] - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@3c305480]
+[2025-01-15 00:03:22] - Created new SQL alias : mp1_0
+[2025-01-15 00:03:22] - Registration of TableGroup [StandardTableGroup(MSProveedor.model.modelProvedor(159))] with identifierForTableGroup [MSProveedor.model.modelProvedor] for NavigablePath [MSProveedor.model.modelProvedor] 
+[2025-01-15 00:03:22] - DomainResult Graph:
+ \-EntityResultImpl [MSProveedor.model.modelProvedor(159)]
+ |  +-BasicFetch [MSProveedor.model.modelProvedor(159).correo_proveedor]
+ |  +-BasicFetch [MSProveedor.model.modelProvedor(159).direccion_proveedor]
+ |  +-BasicFetch [MSProveedor.model.modelProvedor(159).estado_proveedor]
+ |  +-BasicFetch [MSProveedor.model.modelProvedor(159).nombre_proveedor]
+ |  +-BasicFetch [MSProveedor.model.modelProvedor(159).ruc_proveedor]
+ |  \-BasicFetch [MSProveedor.model.modelProvedor(159).telefono_proveedor]
+
+[2025-01-15 00:03:22] - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (mp1 : MSProveedor.model.modelProvedor(159)) {
+          primaryTableReference : proveedores as mp1_0
+        }
+      }
+    }
+
+[2025-01-15 00:03:22] - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+[2025-01-15 00:03:22] - Initializer list:
+	  MSProveedor.model.modelProvedor(159) -> EntityResultInitializer(MSProveedor.model.modelProvedor(159))@1231760969 (SingleTableEntityPersister(MSProveedor.model.modelProvedor))
+
+[2025-01-15 00:03:22] - select mp1_0.proveedor_id,mp1_0.correo_proveedor,mp1_0.direccion_proveedor,mp1_0.estado_proveedor,mp1_0.nombre_proveedor,mp1_0.ruc_proveedor,mp1_0.telefono_proveedor from proveedores mp1_0
+[2025-01-15 00:03:22] - Extracted JDBC value [0] - [15]
+[2025-01-15 00:03:22] - (EntityResultInitializer) Hydrated EntityKey (MSProveedor.model.modelProvedor(159)): 15
+[2025-01-15 00:03:22] - (EntityResultInitializer) Created new entity instance [MSProveedor.model.modelProvedor(159)#15] : 121749457
+[2025-01-15 00:03:22] - Extracted JDBC value [1] - [proveedor3@email.com]
+[2025-01-15 00:03:22] - Extracted JDBC value [2] - [Calle Secundaria 45]
+[2025-01-15 00:03:22] - Extracted JDBC value [3] - [inactivo]
+[2025-01-15 00:03:22] - Extracted JDBC value [4] - [Proveedor 200]
+[2025-01-15 00:03:22] - Extracted JDBC value [5] - [20645123987]
+[2025-01-15 00:03:22] - Extracted JDBC value [6] - [923456789]
+[2025-01-15 00:03:22] - (EntityResultInitializer) Done materializing entityInstance : MSProveedor.model.modelProvedor(159)#15
+[2025-01-15 00:03:22] - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@1748d016
+[2025-01-15 00:03:22] - Extracted JDBC value [0] - [22]
+[2025-01-15 00:03:22] - (EntityResultInitializer) Hydrated EntityKey (MSProveedor.model.modelProvedor(159)): 22
+[2025-01-15 00:03:22] - (EntityResultInitializer) Created new entity instance [MSProveedor.model.modelProvedor(159)#22] : 1348090694
+[2025-01-15 00:03:22] - Extracted JDBC value [1] - [proveedor4@email.com]
+[2025-01-15 00:03:22] - Extracted JDBC value [2] - [Av. Principal 123]
+[2025-01-15 00:03:22] - Extracted JDBC value [3] - [inactivo]
+[2025-01-15 00:03:22] - Extracted JDBC value [4] - []
+[2025-01-15 00:03:22] - Extracted JDBC value [5] - [6232111]
+[2025-01-15 00:03:22] - Extracted JDBC value [6] - [956789123]
+[2025-01-15 00:03:22] - (EntityResultInitializer) Done materializing entityInstance : MSProveedor.model.modelProvedor(159)#22
+[2025-01-15 00:03:22] - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@1748d016
+[2025-01-15 00:03:22] - Extracted JDBC value [0] - [23]
+[2025-01-15 00:03:22] - (EntityResultInitializer) Hydrated EntityKey (MSProveedor.model.modelProvedor(159)): 23
+[2025-01-15 00:03:22] - (EntityResultInitializer) Created new entity instance [MSProveedor.model.modelProvedor(159)#23] : 1258916447
+[2025-01-15 00:03:22] - Extracted JDBC value [1] - [proveedor3@email.com]
+[2025-01-15 00:03:22] - Extracted JDBC value [2] - [Pasaje Flores 89]
+[2025-01-15 00:03:22] - Extracted JDBC value [3] - [inactivo]
+[2025-01-15 00:03:22] - Extracted JDBC value [4] - [Por 3333]
+[2025-01-15 00:03:22] - Extracted JDBC value [5] - [20456812345111]
+[2025-01-15 00:03:22] - Extracted JDBC value [6] - [912345678]
+[2025-01-15 00:03:22] - (EntityResultInitializer) Done materializing entityInstance : MSProveedor.model.modelProvedor(159)#23
+[2025-01-15 00:03:22] - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@1748d016
+[2025-01-15 00:03:22] - Extracted JDBC value [0] - [24]
+[2025-01-15 00:03:22] - (EntityResultInitializer) Hydrated EntityKey (MSProveedor.model.modelProvedor(159)): 24
+[2025-01-15 00:03:22] - (EntityResultInitializer) Created new entity instance [MSProveedor.model.modelProvedor(159)#24] : 1094458328
+[2025-01-15 00:03:22] - Extracted JDBC value [1] - [proveedor3@email.com]
+[2025-01-15 00:03:22] - Extracted JDBC value [2] - [Jr. Los Pinos 567]
+[2025-01-15 00:03:22] - Extracted JDBC value [3] - [inactivo]
+[2025-01-15 00:03:22] - Extracted JDBC value [4] - [Por 3333]
+[2025-01-15 00:03:22] - Extracted JDBC value [5] - [2045681234522]
+[2025-01-15 00:03:22] - Extracted JDBC value [6] - [912345678]
+[2025-01-15 00:03:22] - (EntityResultInitializer) Done materializing entityInstance : MSProveedor.model.modelProvedor(159)#24
+[2025-01-15 00:03:22] - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@1748d016
+[2025-01-15 00:03:22] - Extracted JDBC value [0] - [6]
+[2025-01-15 00:03:22] - (EntityResultInitializer) Hydrated EntityKey (MSProveedor.model.modelProvedor(159)): 6
+[2025-01-15 00:03:22] - (EntityResultInitializer) Created new entity instance [MSProveedor.model.modelProvedor(159)#6] : 270908297
+[2025-01-15 00:03:22] - Extracted JDBC value [1] - [proveedor1@email.com]
+[2025-01-15 00:03:22] - Extracted JDBC value [2] - [Av. Principal 123]
+[2025-01-15 00:03:22] - Extracted JDBC value [3] - [activo]
+[2025-01-15 00:03:22] - Extracted JDBC value [4] - [Proveedor jans333]
+[2025-01-15 00:03:22] - Extracted JDBC value [5] - [2045111111]
+[2025-01-15 00:03:22] - Extracted JDBC value [6] - [987654321]
+[2025-01-15 00:03:22] - (EntityResultInitializer) Done materializing entityInstance : MSProveedor.model.modelProvedor(159)#6
+[2025-01-15 00:03:22] - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@1748d016
+[2025-01-15 00:03:22] - Initiating transaction commit
+[2025-01-15 00:03:22] - Committing JPA transaction on EntityManager [SessionImpl(576257723<open>)]
+[2025-01-15 00:03:22] - committing
+[2025-01-15 00:03:22] - Resetting read-only flag of JDBC Connection [HikariProxyConnection@1285855124 wrapping org.postgresql.jdbc.PgConnection@30c8ae37]
+[2025-01-15 00:03:22] - Not closing pre-bound JPA EntityManager after transaction
+[2025-01-15 00:03:22] - Se encontraron 5 proveedores
+[2025-01-15 00:03:22] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+[2025-01-15 00:03:22] - Writing [{Lista de todos los proveedores existentes=[MSProveedor.model.modelProvedor@741bfd1, MSProveedor.mod (truncated)...]
+[2025-01-15 00:03:22] - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+[2025-01-15 00:03:22] - Completed 200 OK
+[2025-01-15 00:03:24] - GET "/proveedor/get/23", parameters={}
+[2025-01-15 00:03:24] - Mapped to MSProveedor.Controller.ProvedoresController#findById(int)
+[2025-01-15 00:03:24] - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+[2025-01-15 00:03:24] - Buscando proveedor con ID: 23
+[2025-01-15 00:03:24] - SERVICE: Get Find By id: 23
+[2025-01-15 00:03:24] - Found thread-bound EntityManager [SessionImpl(437266018<open>)] for JPA transaction
+[2025-01-15 00:03:24] - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+[2025-01-15 00:03:24] - Setting JDBC Connection [HikariProxyConnection@683195480 wrapping org.postgresql.jdbc.PgConnection@30c8ae37] read-only
+[2025-01-15 00:03:24] - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[2025-01-15 00:03:24] - begin
+[2025-01-15 00:03:24] - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@31c7e358]
+[2025-01-15 00:03:24] - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+[2025-01-15 00:03:24] - Initializer list:
+	  MSProveedor.model.modelProvedor -> EntityResultInitializer(MSProveedor.model.modelProvedor)@1193937750 (SingleTableEntityPersister(MSProveedor.model.modelProvedor))
+
+[2025-01-15 00:03:24] - select mp1_0.proveedor_id,mp1_0.correo_proveedor,mp1_0.direccion_proveedor,mp1_0.estado_proveedor,mp1_0.nombre_proveedor,mp1_0.ruc_proveedor,mp1_0.telefono_proveedor from proveedores mp1_0 where mp1_0.proveedor_id=?
+[2025-01-15 00:03:24] - (EntityResultInitializer) Hydrated EntityKey (MSProveedor.model.modelProvedor): 23
+[2025-01-15 00:03:24] - (EntityResultInitializer) Created new entity instance [MSProveedor.model.modelProvedor#23] : 1073136414
+[2025-01-15 00:03:24] - Extracted JDBC value [1] - [proveedor3@email.com]
+[2025-01-15 00:03:24] - Extracted JDBC value [2] - [Pasaje Flores 89]
+[2025-01-15 00:03:24] - Extracted JDBC value [3] - [inactivo]
+[2025-01-15 00:03:24] - Extracted JDBC value [4] - [Por 3333]
+[2025-01-15 00:03:24] - Extracted JDBC value [5] - [20456812345111]
+[2025-01-15 00:03:24] - Extracted JDBC value [6] - [912345678]
+[2025-01-15 00:03:24] - (EntityResultInitializer) Done materializing entityInstance : MSProveedor.model.modelProvedor#23
+[2025-01-15 00:03:24] - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@28910f0d
+[2025-01-15 00:03:24] - Initiating transaction commit
+[2025-01-15 00:03:24] - Committing JPA transaction on EntityManager [SessionImpl(437266018<open>)]
+[2025-01-15 00:03:24] - committing
+[2025-01-15 00:03:24] - Resetting read-only flag of JDBC Connection [HikariProxyConnection@683195480 wrapping org.postgresql.jdbc.PgConnection@30c8ae37]
+[2025-01-15 00:03:24] - Not closing pre-bound JPA EntityManager after transaction
+[2025-01-15 00:03:24] - Proveedor con ID: 23 encontrado
+[2025-01-15 00:03:24] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+[2025-01-15 00:03:24] - Writing [MSProveedor.model.modelProvedor@3ff6c31e]
+[2025-01-15 00:03:24] - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+[2025-01-15 00:03:24] - Completed 200 OK
+[2025-01-15 00:03:24] - GET "/proveedor/get/23", parameters={}
+[2025-01-15 00:03:24] - Mapped to MSProveedor.Controller.ProvedoresController#findById(int)
+[2025-01-15 00:03:24] - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+[2025-01-15 00:03:24] - Buscando proveedor con ID: 23
+[2025-01-15 00:03:24] - SERVICE: Get Find By id: 23
+[2025-01-15 00:03:24] - Found thread-bound EntityManager [SessionImpl(1416526823<open>)] for JPA transaction
+[2025-01-15 00:03:24] - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+[2025-01-15 00:03:24] - Setting JDBC Connection [HikariProxyConnection@195876189 wrapping org.postgresql.jdbc.PgConnection@30c8ae37] read-only
+[2025-01-15 00:03:24] - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[2025-01-15 00:03:24] - begin
+[2025-01-15 00:03:24] - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@412a1898]
+[2025-01-15 00:03:24] - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+[2025-01-15 00:03:24] - Initializer list:
+	  MSProveedor.model.modelProvedor -> EntityResultInitializer(MSProveedor.model.modelProvedor)@1268536719 (SingleTableEntityPersister(MSProveedor.model.modelProvedor))
+
+[2025-01-15 00:03:24] - select mp1_0.proveedor_id,mp1_0.correo_proveedor,mp1_0.direccion_proveedor,mp1_0.estado_proveedor,mp1_0.nombre_proveedor,mp1_0.ruc_proveedor,mp1_0.telefono_proveedor from proveedores mp1_0 where mp1_0.proveedor_id=?
+[2025-01-15 00:03:24] - (EntityResultInitializer) Hydrated EntityKey (MSProveedor.model.modelProvedor): 23
+[2025-01-15 00:03:24] - (EntityResultInitializer) Created new entity instance [MSProveedor.model.modelProvedor#23] : 270446293
+[2025-01-15 00:03:24] - Extracted JDBC value [1] - [proveedor3@email.com]
+[2025-01-15 00:03:24] - Extracted JDBC value [2] - [Pasaje Flores 89]
+[2025-01-15 00:03:24] - Extracted JDBC value [3] - [inactivo]
+[2025-01-15 00:03:24] - Extracted JDBC value [4] - [Por 3333]
+[2025-01-15 00:03:24] - Extracted JDBC value [5] - [20456812345111]
+[2025-01-15 00:03:24] - Extracted JDBC value [6] - [912345678]
+[2025-01-15 00:03:24] - (EntityResultInitializer) Done materializing entityInstance : MSProveedor.model.modelProvedor#23
+[2025-01-15 00:03:24] - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@3987a174
+[2025-01-15 00:03:24] - Initiating transaction commit
+[2025-01-15 00:03:24] - Committing JPA transaction on EntityManager [SessionImpl(1416526823<open>)]
+[2025-01-15 00:03:24] - committing
+[2025-01-15 00:03:24] - Resetting read-only flag of JDBC Connection [HikariProxyConnection@195876189 wrapping org.postgresql.jdbc.PgConnection@30c8ae37]
+[2025-01-15 00:03:24] - Not closing pre-bound JPA EntityManager after transaction
+[2025-01-15 00:03:24] - Proveedor con ID: 23 encontrado
+[2025-01-15 00:03:24] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+[2025-01-15 00:03:24] - Writing [MSProveedor.model.modelProvedor@101eaed5]
+[2025-01-15 00:03:24] - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+[2025-01-15 00:03:24] - Completed 200 OK
+[2025-01-15 00:03:24] - GET "/proveedor/listar", parameters={}
+[2025-01-15 00:03:24] - Mapped to MSProveedor.Controller.ProvedoresController#findAll()
+[2025-01-15 00:03:24] - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+[2025-01-15 00:03:24] - Iniciando búsqueda de todos los proveedores
+[2025-01-15 00:03:24] - Found thread-bound EntityManager [SessionImpl(696552286<open>)] for JPA transaction
+[2025-01-15 00:03:24] - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+[2025-01-15 00:03:24] - Setting JDBC Connection [HikariProxyConnection@162239484 wrapping org.postgresql.jdbc.PgConnection@30c8ae37] read-only
+[2025-01-15 00:03:24] - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[2025-01-15 00:03:24] - begin
+[2025-01-15 00:03:24] - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@66d9e56d]
+[2025-01-15 00:03:24] - Created new SQL alias : mp1_0
+[2025-01-15 00:03:24] - Registration of TableGroup [StandardTableGroup(MSProveedor.model.modelProvedor(160))] with identifierForTableGroup [MSProveedor.model.modelProvedor] for NavigablePath [MSProveedor.model.modelProvedor] 
+[2025-01-15 00:03:24] - DomainResult Graph:
+ \-EntityResultImpl [MSProveedor.model.modelProvedor(160)]
+ |  +-BasicFetch [MSProveedor.model.modelProvedor(160).correo_proveedor]
+ |  +-BasicFetch [MSProveedor.model.modelProvedor(160).direccion_proveedor]
+ |  +-BasicFetch [MSProveedor.model.modelProvedor(160).estado_proveedor]
+ |  +-BasicFetch [MSProveedor.model.modelProvedor(160).nombre_proveedor]
+ |  +-BasicFetch [MSProveedor.model.modelProvedor(160).ruc_proveedor]
+ |  \-BasicFetch [MSProveedor.model.modelProvedor(160).telefono_proveedor]
+
+[2025-01-15 00:03:24] - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (mp1 : MSProveedor.model.modelProvedor(160)) {
+          primaryTableReference : proveedores as mp1_0
+        }
+      }
+    }
+
+[2025-01-15 00:03:24] - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+[2025-01-15 00:03:24] - Initializer list:
+	  MSProveedor.model.modelProvedor(160) -> EntityResultInitializer(MSProveedor.model.modelProvedor(160))@930310909 (SingleTableEntityPersister(MSProveedor.model.modelProvedor))
+
+[2025-01-15 00:03:24] - select mp1_0.proveedor_id,mp1_0.correo_proveedor,mp1_0.direccion_proveedor,mp1_0.estado_proveedor,mp1_0.nombre_proveedor,mp1_0.ruc_proveedor,mp1_0.telefono_proveedor from proveedores mp1_0
+[2025-01-15 00:03:24] - Extracted JDBC value [0] - [15]
+[2025-01-15 00:03:24] - (EntityResultInitializer) Hydrated EntityKey (MSProveedor.model.modelProvedor(160)): 15
+[2025-01-15 00:03:24] - (EntityResultInitializer) Created new entity instance [MSProveedor.model.modelProvedor(160)#15] : 1021647490
+[2025-01-15 00:03:24] - Extracted JDBC value [1] - [proveedor3@email.com]
+[2025-01-15 00:03:24] - Extracted JDBC value [2] - [Calle Secundaria 45]
+[2025-01-15 00:03:24] - Extracted JDBC value [3] - [inactivo]
+[2025-01-15 00:03:24] - Extracted JDBC value [4] - [Proveedor 200]
+[2025-01-15 00:03:24] - Extracted JDBC value [5] - [20645123987]
+[2025-01-15 00:03:24] - Extracted JDBC value [6] - [923456789]
+[2025-01-15 00:03:24] - (EntityResultInitializer) Done materializing entityInstance : MSProveedor.model.modelProvedor(160)#15
+[2025-01-15 00:03:24] - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@106dbb61
+[2025-01-15 00:03:24] - Extracted JDBC value [0] - [22]
+[2025-01-15 00:03:24] - (EntityResultInitializer) Hydrated EntityKey (MSProveedor.model.modelProvedor(160)): 22
+[2025-01-15 00:03:24] - (EntityResultInitializer) Created new entity instance [MSProveedor.model.modelProvedor(160)#22] : 2112040682
+[2025-01-15 00:03:24] - Extracted JDBC value [1] - [proveedor4@email.com]
+[2025-01-15 00:03:24] - Extracted JDBC value [2] - [Av. Principal 123]
+[2025-01-15 00:03:24] - Extracted JDBC value [3] - [inactivo]
+[2025-01-15 00:03:24] - Extracted JDBC value [4] - []
+[2025-01-15 00:03:24] - Extracted JDBC value [5] - [6232111]
+[2025-01-15 00:03:24] - Extracted JDBC value [6] - [956789123]
+[2025-01-15 00:03:24] - (EntityResultInitializer) Done materializing entityInstance : MSProveedor.model.modelProvedor(160)#22
+[2025-01-15 00:03:24] - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@106dbb61
+[2025-01-15 00:03:24] - Extracted JDBC value [0] - [23]
+[2025-01-15 00:03:24] - (EntityResultInitializer) Hydrated EntityKey (MSProveedor.model.modelProvedor(160)): 23
+[2025-01-15 00:03:24] - (EntityResultInitializer) Created new entity instance [MSProveedor.model.modelProvedor(160)#23] : 218669919
+[2025-01-15 00:03:24] - Extracted JDBC value [1] - [proveedor3@email.com]
+[2025-01-15 00:03:24] - Extracted JDBC value [2] - [Pasaje Flores 89]
+[2025-01-15 00:03:24] - Extracted JDBC value [3] - [inactivo]
+[2025-01-15 00:03:24] - Extracted JDBC value [4] - [Por 3333]
+[2025-01-15 00:03:24] - Extracted JDBC value [5] - [20456812345111]
+[2025-01-15 00:03:24] - Extracted JDBC value [6] - [912345678]
+[2025-01-15 00:03:24] - (EntityResultInitializer) Done materializing entityInstance : MSProveedor.model.modelProvedor(160)#23
+[2025-01-15 00:03:24] - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@106dbb61
+[2025-01-15 00:03:24] - Extracted JDBC value [0] - [24]
+[2025-01-15 00:03:24] - (EntityResultInitializer) Hydrated EntityKey (MSProveedor.model.modelProvedor(160)): 24
+[2025-01-15 00:03:24] - (EntityResultInitializer) Created new entity instance [MSProveedor.model.modelProvedor(160)#24] : 422414710
+[2025-01-15 00:03:24] - Extracted JDBC value [1] - [proveedor3@email.com]
+[2025-01-15 00:03:24] - Extracted JDBC value [2] - [Jr. Los Pinos 567]
+[2025-01-15 00:03:24] - Extracted JDBC value [3] - [inactivo]
+[2025-01-15 00:03:24] - Extracted JDBC value [4] - [Por 3333]
+[2025-01-15 00:03:24] - Extracted JDBC value [5] - [2045681234522]
+[2025-01-15 00:03:24] - Extracted JDBC value [6] - [912345678]
+[2025-01-15 00:03:24] - (EntityResultInitializer) Done materializing entityInstance : MSProveedor.model.modelProvedor(160)#24
+[2025-01-15 00:03:24] - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@106dbb61
+[2025-01-15 00:03:24] - Extracted JDBC value [0] - [6]
+[2025-01-15 00:03:24] - (EntityResultInitializer) Hydrated EntityKey (MSProveedor.model.modelProvedor(160)): 6
+[2025-01-15 00:03:24] - (EntityResultInitializer) Created new entity instance [MSProveedor.model.modelProvedor(160)#6] : 1684447105
+[2025-01-15 00:03:24] - Extracted JDBC value [1] - [proveedor1@email.com]
+[2025-01-15 00:03:24] - Extracted JDBC value [2] - [Av. Principal 123]
+[2025-01-15 00:03:24] - Extracted JDBC value [3] - [activo]
+[2025-01-15 00:03:24] - Extracted JDBC value [4] - [Proveedor jans333]
+[2025-01-15 00:03:24] - Extracted JDBC value [5] - [2045111111]
+[2025-01-15 00:03:24] - Extracted JDBC value [6] - [987654321]
+[2025-01-15 00:03:24] - (EntityResultInitializer) Done materializing entityInstance : MSProveedor.model.modelProvedor(160)#6
+[2025-01-15 00:03:24] - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@106dbb61
+[2025-01-15 00:03:24] - Initiating transaction commit
+[2025-01-15 00:03:24] - Committing JPA transaction on EntityManager [SessionImpl(696552286<open>)]
+[2025-01-15 00:03:24] - committing
+[2025-01-15 00:03:24] - Resetting read-only flag of JDBC Connection [HikariProxyConnection@162239484 wrapping org.postgresql.jdbc.PgConnection@30c8ae37]
+[2025-01-15 00:03:24] - Not closing pre-bound JPA EntityManager after transaction
+[2025-01-15 00:03:24] - Se encontraron 5 proveedores
+[2025-01-15 00:03:24] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+[2025-01-15 00:03:24] - Writing [{Lista de todos los proveedores existentes=[MSProveedor.model.modelProvedor@3ce51a82, MSProveedor.mo (truncated)...]
+[2025-01-15 00:03:24] - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+[2025-01-15 00:03:24] - Completed 200 OK
+[2025-01-15 00:03:24] - GET "/proveedor/listar", parameters={}
+[2025-01-15 00:03:24] - Mapped to MSProveedor.Controller.ProvedoresController#findAll()
+[2025-01-15 00:03:24] - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+[2025-01-15 00:03:24] - Iniciando búsqueda de todos los proveedores
+[2025-01-15 00:03:24] - Found thread-bound EntityManager [SessionImpl(834126631<open>)] for JPA transaction
+[2025-01-15 00:03:24] - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+[2025-01-15 00:03:24] - Setting JDBC Connection [HikariProxyConnection@634328929 wrapping org.postgresql.jdbc.PgConnection@30c8ae37] read-only
+[2025-01-15 00:03:24] - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[2025-01-15 00:03:24] - begin
+[2025-01-15 00:03:24] - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@78c1c182]
+[2025-01-15 00:03:24] - Created new SQL alias : mp1_0
+[2025-01-15 00:03:24] - Registration of TableGroup [StandardTableGroup(MSProveedor.model.modelProvedor(161))] with identifierForTableGroup [MSProveedor.model.modelProvedor] for NavigablePath [MSProveedor.model.modelProvedor] 
+[2025-01-15 00:03:24] - DomainResult Graph:
+ \-EntityResultImpl [MSProveedor.model.modelProvedor(161)]
+ |  +-BasicFetch [MSProveedor.model.modelProvedor(161).correo_proveedor]
+ |  +-BasicFetch [MSProveedor.model.modelProvedor(161).direccion_proveedor]
+ |  +-BasicFetch [MSProveedor.model.modelProvedor(161).estado_proveedor]
+ |  +-BasicFetch [MSProveedor.model.modelProvedor(161).nombre_proveedor]
+ |  +-BasicFetch [MSProveedor.model.modelProvedor(161).ruc_proveedor]
+ |  \-BasicFetch [MSProveedor.model.modelProvedor(161).telefono_proveedor]
+
+[2025-01-15 00:03:24] - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (mp1 : MSProveedor.model.modelProvedor(161)) {
+          primaryTableReference : proveedores as mp1_0
+        }
+      }
+    }
+
+[2025-01-15 00:03:24] - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+[2025-01-15 00:03:24] - Initializer list:
+	  MSProveedor.model.modelProvedor(161) -> EntityResultInitializer(MSProveedor.model.modelProvedor(161))@516533425 (SingleTableEntityPersister(MSProveedor.model.modelProvedor))
+
+[2025-01-15 00:03:24] - select mp1_0.proveedor_id,mp1_0.correo_proveedor,mp1_0.direccion_proveedor,mp1_0.estado_proveedor,mp1_0.nombre_proveedor,mp1_0.ruc_proveedor,mp1_0.telefono_proveedor from proveedores mp1_0
+[2025-01-15 00:03:24] - Extracted JDBC value [0] - [15]
+[2025-01-15 00:03:24] - (EntityResultInitializer) Hydrated EntityKey (MSProveedor.model.modelProvedor(161)): 15
+[2025-01-15 00:03:24] - (EntityResultInitializer) Created new entity instance [MSProveedor.model.modelProvedor(161)#15] : 292279374
+[2025-01-15 00:03:24] - Extracted JDBC value [1] - [proveedor3@email.com]
+[2025-01-15 00:03:24] - Extracted JDBC value [2] - [Calle Secundaria 45]
+[2025-01-15 00:03:24] - Extracted JDBC value [3] - [inactivo]
+[2025-01-15 00:03:24] - Extracted JDBC value [4] - [Proveedor 200]
+[2025-01-15 00:03:24] - Extracted JDBC value [5] - [20645123987]
+[2025-01-15 00:03:24] - Extracted JDBC value [6] - [923456789]
+[2025-01-15 00:03:24] - (EntityResultInitializer) Done materializing entityInstance : MSProveedor.model.modelProvedor(161)#15
+[2025-01-15 00:03:24] - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@42144ef6
+[2025-01-15 00:03:24] - Extracted JDBC value [0] - [22]
+[2025-01-15 00:03:24] - (EntityResultInitializer) Hydrated EntityKey (MSProveedor.model.modelProvedor(161)): 22
+[2025-01-15 00:03:24] - (EntityResultInitializer) Created new entity instance [MSProveedor.model.modelProvedor(161)#22] : 2087645260
+[2025-01-15 00:03:24] - Extracted JDBC value [1] - [proveedor4@email.com]
+[2025-01-15 00:03:24] - Extracted JDBC value [2] - [Av. Principal 123]
+[2025-01-15 00:03:24] - Extracted JDBC value [3] - [inactivo]
+[2025-01-15 00:03:24] - Extracted JDBC value [4] - []
+[2025-01-15 00:03:24] - Extracted JDBC value [5] - [6232111]
+[2025-01-15 00:03:24] - Extracted JDBC value [6] - [956789123]
+[2025-01-15 00:03:24] - (EntityResultInitializer) Done materializing entityInstance : MSProveedor.model.modelProvedor(161)#22
+[2025-01-15 00:03:24] - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@42144ef6
+[2025-01-15 00:03:24] - Extracted JDBC value [0] - [23]
+[2025-01-15 00:03:24] - (EntityResultInitializer) Hydrated EntityKey (MSProveedor.model.modelProvedor(161)): 23
+[2025-01-15 00:03:24] - (EntityResultInitializer) Created new entity instance [MSProveedor.model.modelProvedor(161)#23] : 338340260
+[2025-01-15 00:03:24] - Extracted JDBC value [1] - [proveedor3@email.com]
+[2025-01-15 00:03:24] - Extracted JDBC value [2] - [Pasaje Flores 89]
+[2025-01-15 00:03:24] - Extracted JDBC value [3] - [inactivo]
+[2025-01-15 00:03:24] - Extracted JDBC value [4] - [Por 3333]
+[2025-01-15 00:03:24] - Extracted JDBC value [5] - [20456812345111]
+[2025-01-15 00:03:24] - Extracted JDBC value [6] - [912345678]
+[2025-01-15 00:03:24] - (EntityResultInitializer) Done materializing entityInstance : MSProveedor.model.modelProvedor(161)#23
+[2025-01-15 00:03:24] - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@42144ef6
+[2025-01-15 00:03:24] - Extracted JDBC value [0] - [24]
+[2025-01-15 00:03:24] - (EntityResultInitializer) Hydrated EntityKey (MSProveedor.model.modelProvedor(161)): 24
+[2025-01-15 00:03:24] - (EntityResultInitializer) Created new entity instance [MSProveedor.model.modelProvedor(161)#24] : 1529665227
+[2025-01-15 00:03:24] - Extracted JDBC value [1] - [proveedor3@email.com]
+[2025-01-15 00:03:24] - Extracted JDBC value [2] - [Jr. Los Pinos 567]
+[2025-01-15 00:03:24] - Extracted JDBC value [3] - [inactivo]
+[2025-01-15 00:03:24] - Extracted JDBC value [4] - [Por 3333]
+[2025-01-15 00:03:24] - Extracted JDBC value [5] - [2045681234522]
+[2025-01-15 00:03:24] - Extracted JDBC value [6] - [912345678]
+[2025-01-15 00:03:24] - (EntityResultInitializer) Done materializing entityInstance : MSProveedor.model.modelProvedor(161)#24
+[2025-01-15 00:03:24] - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@42144ef6
+[2025-01-15 00:03:24] - Extracted JDBC value [0] - [6]
+[2025-01-15 00:03:24] - (EntityResultInitializer) Hydrated EntityKey (MSProveedor.model.modelProvedor(161)): 6
+[2025-01-15 00:03:24] - (EntityResultInitializer) Created new entity instance [MSProveedor.model.modelProvedor(161)#6] : 1001341094
+[2025-01-15 00:03:24] - Extracted JDBC value [1] - [proveedor1@email.com]
+[2025-01-15 00:03:24] - Extracted JDBC value [2] - [Av. Principal 123]
+[2025-01-15 00:03:24] - Extracted JDBC value [3] - [activo]
+[2025-01-15 00:03:24] - Extracted JDBC value [4] - [Proveedor jans333]
+[2025-01-15 00:03:24] - Extracted JDBC value [5] - [2045111111]
+[2025-01-15 00:03:24] - Extracted JDBC value [6] - [987654321]
+[2025-01-15 00:03:24] - (EntityResultInitializer) Done materializing entityInstance : MSProveedor.model.modelProvedor(161)#6
+[2025-01-15 00:03:24] - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@42144ef6
+[2025-01-15 00:03:24] - Initiating transaction commit
+[2025-01-15 00:03:24] - Committing JPA transaction on EntityManager [SessionImpl(834126631<open>)]
+[2025-01-15 00:03:24] - committing
+[2025-01-15 00:03:24] - Resetting read-only flag of JDBC Connection [HikariProxyConnection@634328929 wrapping org.postgresql.jdbc.PgConnection@30c8ae37]
+[2025-01-15 00:03:24] - Not closing pre-bound JPA EntityManager after transaction
+[2025-01-15 00:03:24] - Se encontraron 5 proveedores
+[2025-01-15 00:03:24] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+[2025-01-15 00:03:24] - Writing [{Lista de todos los proveedores existentes=[MSProveedor.model.modelProvedor@116bd44e, MSProveedor.mo (truncated)...]
+[2025-01-15 00:03:24] - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+[2025-01-15 00:03:24] - Completed 200 OK
+[2025-01-15 00:03:28] - GET "/proveedor/listar", parameters={}
+[2025-01-15 00:03:28] - Mapped to MSProveedor.Controller.ProvedoresController#findAll()
+[2025-01-15 00:03:28] - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+[2025-01-15 00:03:28] - Iniciando búsqueda de todos los proveedores
+[2025-01-15 00:03:28] - Found thread-bound EntityManager [SessionImpl(1407127285<open>)] for JPA transaction
+[2025-01-15 00:03:28] - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+[2025-01-15 00:03:28] - Setting JDBC Connection [HikariProxyConnection@928066784 wrapping org.postgresql.jdbc.PgConnection@30c8ae37] read-only
+[2025-01-15 00:03:28] - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[2025-01-15 00:03:28] - begin
+[2025-01-15 00:03:28] - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@3aeb376a]
+[2025-01-15 00:03:28] - Created new SQL alias : mp1_0
+[2025-01-15 00:03:28] - Registration of TableGroup [StandardTableGroup(MSProveedor.model.modelProvedor(162))] with identifierForTableGroup [MSProveedor.model.modelProvedor] for NavigablePath [MSProveedor.model.modelProvedor] 
+[2025-01-15 00:03:28] - DomainResult Graph:
+ \-EntityResultImpl [MSProveedor.model.modelProvedor(162)]
+ |  +-BasicFetch [MSProveedor.model.modelProvedor(162).correo_proveedor]
+ |  +-BasicFetch [MSProveedor.model.modelProvedor(162).direccion_proveedor]
+ |  +-BasicFetch [MSProveedor.model.modelProvedor(162).estado_proveedor]
+ |  +-BasicFetch [MSProveedor.model.modelProvedor(162).nombre_proveedor]
+ |  +-BasicFetch [MSProveedor.model.modelProvedor(162).ruc_proveedor]
+ |  \-BasicFetch [MSProveedor.model.modelProvedor(162).telefono_proveedor]
+
+[2025-01-15 00:03:28] - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (mp1 : MSProveedor.model.modelProvedor(162)) {
+          primaryTableReference : proveedores as mp1_0
+        }
+      }
+    }
+
+[2025-01-15 00:03:28] - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+[2025-01-15 00:03:28] - Initializer list:
+	  MSProveedor.model.modelProvedor(162) -> EntityResultInitializer(MSProveedor.model.modelProvedor(162))@283616920 (SingleTableEntityPersister(MSProveedor.model.modelProvedor))
+
+[2025-01-15 00:03:28] - select mp1_0.proveedor_id,mp1_0.correo_proveedor,mp1_0.direccion_proveedor,mp1_0.estado_proveedor,mp1_0.nombre_proveedor,mp1_0.ruc_proveedor,mp1_0.telefono_proveedor from proveedores mp1_0
+[2025-01-15 00:03:28] - Extracted JDBC value [0] - [15]
+[2025-01-15 00:03:28] - (EntityResultInitializer) Hydrated EntityKey (MSProveedor.model.modelProvedor(162)): 15
+[2025-01-15 00:03:28] - (EntityResultInitializer) Created new entity instance [MSProveedor.model.modelProvedor(162)#15] : 1721911033
+[2025-01-15 00:03:28] - Extracted JDBC value [1] - [proveedor3@email.com]
+[2025-01-15 00:03:28] - Extracted JDBC value [2] - [Calle Secundaria 45]
+[2025-01-15 00:03:28] - Extracted JDBC value [3] - [inactivo]
+[2025-01-15 00:03:28] - Extracted JDBC value [4] - [Proveedor 200]
+[2025-01-15 00:03:28] - Extracted JDBC value [5] - [20645123987]
+[2025-01-15 00:03:28] - Extracted JDBC value [6] - [923456789]
+[2025-01-15 00:03:28] - (EntityResultInitializer) Done materializing entityInstance : MSProveedor.model.modelProvedor(162)#15
+[2025-01-15 00:03:28] - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@4bdcefd3
+[2025-01-15 00:03:28] - Extracted JDBC value [0] - [22]
+[2025-01-15 00:03:28] - (EntityResultInitializer) Hydrated EntityKey (MSProveedor.model.modelProvedor(162)): 22
+[2025-01-15 00:03:28] - (EntityResultInitializer) Created new entity instance [MSProveedor.model.modelProvedor(162)#22] : 753811976
+[2025-01-15 00:03:28] - Extracted JDBC value [1] - [proveedor4@email.com]
+[2025-01-15 00:03:28] - Extracted JDBC value [2] - [Av. Principal 123]
+[2025-01-15 00:03:28] - Extracted JDBC value [3] - [inactivo]
+[2025-01-15 00:03:28] - Extracted JDBC value [4] - []
+[2025-01-15 00:03:28] - Extracted JDBC value [5] - [6232111]
+[2025-01-15 00:03:28] - Extracted JDBC value [6] - [956789123]
+[2025-01-15 00:03:28] - (EntityResultInitializer) Done materializing entityInstance : MSProveedor.model.modelProvedor(162)#22
+[2025-01-15 00:03:28] - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@4bdcefd3
+[2025-01-15 00:03:28] - Extracted JDBC value [0] - [23]
+[2025-01-15 00:03:28] - (EntityResultInitializer) Hydrated EntityKey (MSProveedor.model.modelProvedor(162)): 23
+[2025-01-15 00:03:28] - (EntityResultInitializer) Created new entity instance [MSProveedor.model.modelProvedor(162)#23] : 1814110098
+[2025-01-15 00:03:28] - Extracted JDBC value [1] - [proveedor3@email.com]
+[2025-01-15 00:03:28] - Extracted JDBC value [2] - [Pasaje Flores 89]
+[2025-01-15 00:03:28] - Extracted JDBC value [3] - [inactivo]
+[2025-01-15 00:03:28] - Extracted JDBC value [4] - [Por 3333]
+[2025-01-15 00:03:28] - Extracted JDBC value [5] - [20456812345111]
+[2025-01-15 00:03:28] - Extracted JDBC value [6] - [912345678]
+[2025-01-15 00:03:28] - (EntityResultInitializer) Done materializing entityInstance : MSProveedor.model.modelProvedor(162)#23
+[2025-01-15 00:03:28] - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@4bdcefd3
+[2025-01-15 00:03:28] - Extracted JDBC value [0] - [24]
+[2025-01-15 00:03:28] - (EntityResultInitializer) Hydrated EntityKey (MSProveedor.model.modelProvedor(162)): 24
+[2025-01-15 00:03:28] - (EntityResultInitializer) Created new entity instance [MSProveedor.model.modelProvedor(162)#24] : 406853985
+[2025-01-15 00:03:28] - Extracted JDBC value [1] - [proveedor3@email.com]
+[2025-01-15 00:03:28] - Extracted JDBC value [2] - [Jr. Los Pinos 567]
+[2025-01-15 00:03:28] - Extracted JDBC value [3] - [inactivo]
+[2025-01-15 00:03:28] - Extracted JDBC value [4] - [Por 3333]
+[2025-01-15 00:03:28] - Extracted JDBC value [5] - [2045681234522]
+[2025-01-15 00:03:28] - Extracted JDBC value [6] - [912345678]
+[2025-01-15 00:03:28] - (EntityResultInitializer) Done materializing entityInstance : MSProveedor.model.modelProvedor(162)#24
+[2025-01-15 00:03:28] - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@4bdcefd3
+[2025-01-15 00:03:28] - Extracted JDBC value [0] - [6]
+[2025-01-15 00:03:28] - (EntityResultInitializer) Hydrated EntityKey (MSProveedor.model.modelProvedor(162)): 6
+[2025-01-15 00:03:28] - (EntityResultInitializer) Created new entity instance [MSProveedor.model.modelProvedor(162)#6] : 877580237
+[2025-01-15 00:03:28] - Extracted JDBC value [1] - [proveedor1@email.com]
+[2025-01-15 00:03:28] - Extracted JDBC value [2] - [Av. Principal 123]
+[2025-01-15 00:03:28] - Extracted JDBC value [3] - [activo]
+[2025-01-15 00:03:28] - Extracted JDBC value [4] - [Proveedor jans333]
+[2025-01-15 00:03:28] - Extracted JDBC value [5] - [2045111111]
+[2025-01-15 00:03:28] - Extracted JDBC value [6] - [987654321]
+[2025-01-15 00:03:28] - (EntityResultInitializer) Done materializing entityInstance : MSProveedor.model.modelProvedor(162)#6
+[2025-01-15 00:03:28] - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@4bdcefd3
+[2025-01-15 00:03:28] - Initiating transaction commit
+[2025-01-15 00:03:28] - Committing JPA transaction on EntityManager [SessionImpl(1407127285<open>)]
+[2025-01-15 00:03:28] - committing
+[2025-01-15 00:03:28] - Resetting read-only flag of JDBC Connection [HikariProxyConnection@928066784 wrapping org.postgresql.jdbc.PgConnection@30c8ae37]
+[2025-01-15 00:03:28] - Not closing pre-bound JPA EntityManager after transaction
+[2025-01-15 00:03:28] - Se encontraron 5 proveedores
+[2025-01-15 00:03:28] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+[2025-01-15 00:03:28] - Writing [{Lista de todos los proveedores existentes=[MSProveedor.model.modelProvedor@66a246f9, MSProveedor.mo (truncated)...]
+[2025-01-15 00:03:28] - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+[2025-01-15 00:03:28] - Completed 200 OK
+[2025-01-15 00:03:52] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2025-01-15 00:03:52] - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+[2025-01-15 00:04:22] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2025-01-15 00:04:22] - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+[2025-01-15 00:04:52] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2025-01-15 00:04:52] - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+[2025-01-15 00:05:14] - GET "/proveedor/listar", parameters={}
+[2025-01-15 00:05:14] - Mapped to MSProveedor.Controller.ProvedoresController#findAll()
+[2025-01-15 00:05:14] - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+[2025-01-15 00:05:14] - Iniciando búsqueda de todos los proveedores
+[2025-01-15 00:05:14] - Found thread-bound EntityManager [SessionImpl(2146552111<open>)] for JPA transaction
+[2025-01-15 00:05:14] - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+[2025-01-15 00:05:14] - Setting JDBC Connection [HikariProxyConnection@195233346 wrapping org.postgresql.jdbc.PgConnection@30c8ae37] read-only
+[2025-01-15 00:05:14] - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[2025-01-15 00:05:14] - begin
+[2025-01-15 00:05:14] - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@51193af9]
+[2025-01-15 00:05:14] - Created new SQL alias : mp1_0
+[2025-01-15 00:05:14] - Registration of TableGroup [StandardTableGroup(MSProveedor.model.modelProvedor(163))] with identifierForTableGroup [MSProveedor.model.modelProvedor] for NavigablePath [MSProveedor.model.modelProvedor] 
+[2025-01-15 00:05:14] - DomainResult Graph:
+ \-EntityResultImpl [MSProveedor.model.modelProvedor(163)]
+ |  +-BasicFetch [MSProveedor.model.modelProvedor(163).correo_proveedor]
+ |  +-BasicFetch [MSProveedor.model.modelProvedor(163).direccion_proveedor]
+ |  +-BasicFetch [MSProveedor.model.modelProvedor(163).estado_proveedor]
+ |  +-BasicFetch [MSProveedor.model.modelProvedor(163).nombre_proveedor]
+ |  +-BasicFetch [MSProveedor.model.modelProvedor(163).ruc_proveedor]
+ |  \-BasicFetch [MSProveedor.model.modelProvedor(163).telefono_proveedor]
+
+[2025-01-15 00:05:14] - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (mp1 : MSProveedor.model.modelProvedor(163)) {
+          primaryTableReference : proveedores as mp1_0
+        }
+      }
+    }
+
+[2025-01-15 00:05:14] - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+[2025-01-15 00:05:14] - Initializer list:
+	  MSProveedor.model.modelProvedor(163) -> EntityResultInitializer(MSProveedor.model.modelProvedor(163))@1706253026 (SingleTableEntityPersister(MSProveedor.model.modelProvedor))
+
+[2025-01-15 00:05:14] - select mp1_0.proveedor_id,mp1_0.correo_proveedor,mp1_0.direccion_proveedor,mp1_0.estado_proveedor,mp1_0.nombre_proveedor,mp1_0.ruc_proveedor,mp1_0.telefono_proveedor from proveedores mp1_0
+[2025-01-15 00:05:14] - Extracted JDBC value [0] - [15]
+[2025-01-15 00:05:14] - (EntityResultInitializer) Hydrated EntityKey (MSProveedor.model.modelProvedor(163)): 15
+[2025-01-15 00:05:14] - (EntityResultInitializer) Created new entity instance [MSProveedor.model.modelProvedor(163)#15] : 1574918614
+[2025-01-15 00:05:14] - Extracted JDBC value [1] - [proveedor3@email.com]
+[2025-01-15 00:05:14] - Extracted JDBC value [2] - [Calle Secundaria 45]
+[2025-01-15 00:05:14] - Extracted JDBC value [3] - [inactivo]
+[2025-01-15 00:05:14] - Extracted JDBC value [4] - [Proveedor 200]
+[2025-01-15 00:05:14] - Extracted JDBC value [5] - [20645123987]
+[2025-01-15 00:05:14] - Extracted JDBC value [6] - [923456789]
+[2025-01-15 00:05:14] - (EntityResultInitializer) Done materializing entityInstance : MSProveedor.model.modelProvedor(163)#15
+[2025-01-15 00:05:14] - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@22c46cc5
+[2025-01-15 00:05:14] - Extracted JDBC value [0] - [22]
+[2025-01-15 00:05:14] - (EntityResultInitializer) Hydrated EntityKey (MSProveedor.model.modelProvedor(163)): 22
+[2025-01-15 00:05:14] - (EntityResultInitializer) Created new entity instance [MSProveedor.model.modelProvedor(163)#22] : 2063190994
+[2025-01-15 00:05:14] - Extracted JDBC value [1] - [proveedor4@email.com]
+[2025-01-15 00:05:14] - Extracted JDBC value [2] - [Av. Principal 123]
+[2025-01-15 00:05:14] - Extracted JDBC value [3] - [inactivo]
+[2025-01-15 00:05:14] - Extracted JDBC value [4] - []
+[2025-01-15 00:05:14] - Extracted JDBC value [5] - [6232111]
+[2025-01-15 00:05:14] - Extracted JDBC value [6] - [956789123]
+[2025-01-15 00:05:14] - (EntityResultInitializer) Done materializing entityInstance : MSProveedor.model.modelProvedor(163)#22
+[2025-01-15 00:05:14] - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@22c46cc5
+[2025-01-15 00:05:14] - Extracted JDBC value [0] - [23]
+[2025-01-15 00:05:14] - (EntityResultInitializer) Hydrated EntityKey (MSProveedor.model.modelProvedor(163)): 23
+[2025-01-15 00:05:14] - (EntityResultInitializer) Created new entity instance [MSProveedor.model.modelProvedor(163)#23] : 1242440192
+[2025-01-15 00:05:14] - Extracted JDBC value [1] - [proveedor3@email.com]
+[2025-01-15 00:05:14] - Extracted JDBC value [2] - [Pasaje Flores 89]
+[2025-01-15 00:05:14] - Extracted JDBC value [3] - [inactivo]
+[2025-01-15 00:05:14] - Extracted JDBC value [4] - [Por 3333]
+[2025-01-15 00:05:14] - Extracted JDBC value [5] - [20456812345111]
+[2025-01-15 00:05:14] - Extracted JDBC value [6] - [912345678]
+[2025-01-15 00:05:14] - (EntityResultInitializer) Done materializing entityInstance : MSProveedor.model.modelProvedor(163)#23
+[2025-01-15 00:05:14] - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@22c46cc5
+[2025-01-15 00:05:14] - Extracted JDBC value [0] - [24]
+[2025-01-15 00:05:14] - (EntityResultInitializer) Hydrated EntityKey (MSProveedor.model.modelProvedor(163)): 24
+[2025-01-15 00:05:14] - (EntityResultInitializer) Created new entity instance [MSProveedor.model.modelProvedor(163)#24] : 1832440702
+[2025-01-15 00:05:14] - Extracted JDBC value [1] - [proveedor3@email.com]
+[2025-01-15 00:05:14] - Extracted JDBC value [2] - [Jr. Los Pinos 567]
+[2025-01-15 00:05:14] - Extracted JDBC value [3] - [inactivo]
+[2025-01-15 00:05:14] - Extracted JDBC value [4] - [Por 3333]
+[2025-01-15 00:05:14] - Extracted JDBC value [5] - [2045681234522]
+[2025-01-15 00:05:14] - Extracted JDBC value [6] - [912345678]
+[2025-01-15 00:05:14] - (EntityResultInitializer) Done materializing entityInstance : MSProveedor.model.modelProvedor(163)#24
+[2025-01-15 00:05:14] - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@22c46cc5
+[2025-01-15 00:05:14] - Extracted JDBC value [0] - [6]
+[2025-01-15 00:05:14] - (EntityResultInitializer) Hydrated EntityKey (MSProveedor.model.modelProvedor(163)): 6
+[2025-01-15 00:05:14] - (EntityResultInitializer) Created new entity instance [MSProveedor.model.modelProvedor(163)#6] : 1813723224
+[2025-01-15 00:05:14] - Extracted JDBC value [1] - [proveedor1@email.com]
+[2025-01-15 00:05:14] - Extracted JDBC value [2] - [Av. Principal 123]
+[2025-01-15 00:05:14] - Extracted JDBC value [3] - [activo]
+[2025-01-15 00:05:14] - Extracted JDBC value [4] - [Proveedor jans333]
+[2025-01-15 00:05:14] - Extracted JDBC value [5] - [2045111111]
+[2025-01-15 00:05:14] - Extracted JDBC value [6] - [987654321]
+[2025-01-15 00:05:14] - (EntityResultInitializer) Done materializing entityInstance : MSProveedor.model.modelProvedor(163)#6
+[2025-01-15 00:05:14] - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@22c46cc5
+[2025-01-15 00:05:14] - Initiating transaction commit
+[2025-01-15 00:05:14] - Committing JPA transaction on EntityManager [SessionImpl(2146552111<open>)]
+[2025-01-15 00:05:14] - committing
+[2025-01-15 00:05:14] - Resetting read-only flag of JDBC Connection [HikariProxyConnection@195233346 wrapping org.postgresql.jdbc.PgConnection@30c8ae37]
+[2025-01-15 00:05:14] - Not closing pre-bound JPA EntityManager after transaction
+[2025-01-15 00:05:14] - Se encontraron 5 proveedores
+[2025-01-15 00:05:14] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+[2025-01-15 00:05:14] - Writing [{Lista de todos los proveedores existentes=[MSProveedor.model.modelProvedor@5ddf59d6, MSProveedor.mo (truncated)...]
+[2025-01-15 00:05:14] - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+[2025-01-15 00:05:14] - Completed 200 OK
+[2025-01-15 00:05:22] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2025-01-15 00:05:22] - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+[2025-01-15 00:05:52] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2025-01-15 00:05:52] - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+[2025-01-15 00:06:22] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2025-01-15 00:06:22] - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+[2025-01-15 00:06:52] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2025-01-15 00:06:52] - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+[2025-01-15 00:07:22] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2025-01-15 00:07:22] - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+[2025-01-15 00:07:52] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2025-01-15 00:07:52] - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+[2025-01-15 00:08:22] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2025-01-15 00:08:22] - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+[2025-01-15 00:08:52] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2025-01-15 00:08:52] - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
