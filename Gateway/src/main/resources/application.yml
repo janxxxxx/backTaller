@@ -1,5 +1,5 @@
 server:
-  port: 6001
+  port: 6003
 
 jwt:
   secret: Key#SuperSecret$PolyglotTest#JavaMicroservices#924051891
@@ -26,10 +26,10 @@ spring:
           - StripPrefix=1
           - JwtAuthenticationFilter
 
-      - id: apptransaction
-        uri: http://localhost:84
+      - id: appMsCliente
+        uri: http://localhost:8085
         predicates:
-          - Path=/transaction/**
+          - Path=/MsCliente/**
         filters:
           - StripPrefix=1
           - JwtAuthenticationFilter
