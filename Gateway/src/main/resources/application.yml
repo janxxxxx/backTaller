@@ -19,13 +19,11 @@ spring:
               allowedHeaders: "*"
       routes:      
       - id: MsProveedores
-        uri: http://localhost:84
+        uri: http://localhost:8084
         predicates:
           - Path=/proveedor/**
         filters:
           - StripPrefix=1
-          - JwtAuthenticationFilter
-
       - id: appMsCliente
         uri: http://localhost:8085
         predicates:
