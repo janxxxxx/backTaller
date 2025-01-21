@@ -1,0 +1,26 @@
+# Utilizar una imagen base de Maven para compilar el proyecto
+FROM maven:3.8.8-openjdk-17 AS build
+
+# Configurar el directorio de trabajo
+WORKDIR /app
+
+# Copiar los archivos del proyecto al contenedor
+COPY . .
+
+# Compilar y empaquetar la aplicación
+RUN mvn clean package -DskipTests
+
+# Crear una imagen más ligera para ejecutar el proyecto
+FROM openjdk:17-jdk-slim
+
+# Configurar el directorio de trabajo
+WORKDIR /app
+
+# Copiar el archivo JAR generado desde la etapa de construcción
+COPY --from=build /app/target/MsProductosMongo-0.0.1-SNAPSHOT.jar app.jar
+
+# Exponer el puerto en el que se ejecutará la aplicación
+EXPOSE 8080
+
+# Comando para ejecutar la aplicación
+ENTRYPOINT ["java", "-jar", "app.jar"]
