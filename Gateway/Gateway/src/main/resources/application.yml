@@ -2,7 +2,7 @@ server:
   port: 6001
 
 jwt:
-  secret: Key#SuperSecret$PolyglotTest#JavaMicroservices#940527000
+  secret: Key#SuperSecret$PolyglotTest#JavaMicroservices#2025unu
 
 spring:
   application:
@@ -18,10 +18,11 @@ spring:
               allowedMethods: "*"
               allowedHeaders: "*"
       routes:      
-      - id: appsecurity
-        uri: http://localhost:81
+      - id: MsProveedores
+        uri: http://localhost:84
         predicates:
-          - Path=/security/**
+          - Path=/proveedor/**
+          - JwtAuthenticationFilter
         filters:
           - StripPrefix=1
       - id: appinvoice
