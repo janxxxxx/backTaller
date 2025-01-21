@@ -1,0 +1,622 @@
+{
+	"info": {
+		"_postman_id": "41d7a26d-4422-4ca1-b119-3b43feeaeba5",
+		"name": "PROYECTO_FINAL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "39486017"
+	},
+	"item": [
+		{
+			"name": "MsProductos",
+			"item": [
+				{
+					"name": "Producto por codigo",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"codigo\": \"P001\",\r\n  \"descripcion\": \"Nuevo producto\",\r\n  \"categoria\": \"Categoría B\",\r\n  \"almacen\": \"Almacén 2\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/productos/codigo/P003"
+					},
+					"response": []
+				},
+				{
+					"name": "Todos los productos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"codigo\": \"P001\",\r\n  \"descripcion\": \"Nuevo producto\",\r\n  \"categoria\": \"Categoría B\",\r\n  \"almacen\": \"Almacén 2\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/productos"
+					},
+					"response": []
+				},
+				{
+					"name": "Nuevo Producto",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codigo\": \"P002\",\r\n    \"descripcion\": \"Televisor\",\r\n    \"categoria\": \"Electrónica\",\r\n    \"almacen\": \"Tiendas EFE\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/productos"
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Producto - \"Primero buscas y luego eliminas\"",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/api/productos/codigo/P002"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MsAcceso",
+			"item": [
+				{
+					"name": "Local",
+					"item": [
+						{
+							"name": "FindAll",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Create",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id_usuario\": 2,\r\n    \"nombre\": \"admin\",\r\n    \"username\": \"admin\",\r\n    \"password\": \"admin\",\r\n    \"rol\": 1,\r\n    \"fecha\": \"2025-01-12 10:24:06\"\r\n}   ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8081/usuario/create"
+							},
+							"response": []
+						},
+						{
+							"name": "Delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": "http://localhost:8082/usuario/delete/2"
+							},
+							"response": []
+						},
+						{
+							"name": "FindById",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"request": {
+								"method": "PUT",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "idLog",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "valideUser",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:8090/usuario/existe/"
+							},
+							"response": []
+						},
+						{
+							"name": "LoguearUsuario",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"ramon@gmail.com\",\r\n    \"password\": \"ramon\",\r\n    \"rol\": 0\r\n}   ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8090/usuario/login-por-role"
+							},
+							"response": []
+						},
+						{
+							"name": "EncryptPassword",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"password\": \"miContraseña123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8090/usuario/encrypt-password"
+							},
+							"response": []
+						},
+						{
+							"name": "Encrypt",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"password\": \"miContraseña123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8090/usuario/encrypt-password"
+							},
+							"response": []
+						},
+						{
+							"name": "Decrypt",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"password\": \"miContraseña123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8090/usuario/encrypt-password"
+							},
+							"response": []
+						},
+						{
+							"name": "ValideEncryptPass Copy",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"password\": \"miContraseña123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8090/usuario/encrypt-password"
+							},
+							"response": []
+						},
+						{
+							"name": "SearchUser",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombre\": \"admin\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8090/usuario/find-by-name"
+							},
+							"response": []
+						},
+						{
+							"name": "Token",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Gateway",
+					"item": [
+						{
+							"name": "getUsuario",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:6003/acceso/usuario/findAll"
+							},
+							"response": []
+						},
+						{
+							"name": "createUsuario",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": "http://localhost:6003/acceso/usuario/create"
+							},
+							"response": []
+						},
+						{
+							"name": "deleteUsuario",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": "http://localhost:6003/acceso/usuario/delete"
+							},
+							"response": []
+						},
+						{
+							"name": "findByIdUsuario",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:6003/acceso/usuario/findById"
+							},
+							"response": []
+						},
+						{
+							"name": "updateUsuario",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": "http://localhost:6003/acceso/usuario/update"
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "MsClientes",
+			"item": [
+				{
+					"name": "ConGateway",
+					"item": [
+						{
+							"name": "MostrarClientes",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:6003/MsCliente/clientes/findAll"
+							},
+							"response": []
+						},
+						{
+							"name": "BuscarCliente",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:6003/MsCliente/clientes/1"
+							},
+							"response": []
+						},
+						{
+							"name": "IngresarCliente",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombres\": \"master1\",\r\n    \"apellidos\": \"soy\",\r\n    \"email\": \"master@gmail.com\",\r\n    \"fecha\": \"2022-04-10\",\r\n    \"descripcion\": \"es un master\",\r\n    \"numtelef\": \"993322111\",\r\n    \"tipofactura\": \"master ahi\"\r\n  }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:6003/MsCliente/clientes/create"
+							},
+							"response": []
+						},
+						{
+							"name": "ModificarCliente",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombres\": \"masterisando es\",\r\n    \"apellidos\": \"soy\",\r\n    \"email\": \"master@gmail.com\",\r\n    \"fecha\": \"2022-04-10\",\r\n    \"descripcion\": \"es un master\",\r\n    \"numtelef\": \"993322111\",\r\n    \"tipofactura\": \"master ahi\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:6003/MsCliente/clientes/9"
+							},
+							"response": []
+						},
+						{
+							"name": "EliminarCliente",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": "http://localhost:6003/MsCliente/clientes/9"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "SinGateway",
+					"item": [
+						{
+							"name": "MostrarClientes",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:8085/clientes/findAll"
+							},
+							"response": []
+						},
+						{
+							"name": "BuscarCliente",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:8085/clientes/1"
+							},
+							"response": []
+						},
+						{
+							"name": "EliminarCliente",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": "http://localhost:8085/clientes/12"
+							},
+							"response": []
+						},
+						{
+							"name": "IngresarCliente",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "\r\n  {\r\n    \"nombres\": \"loca nat\",\r\n    \"apellidos\": \"mas lo\",\r\n    \"email\": \"locamaslo@gmail.com\",\r\n    \"fecha\": \"2015-04-03\",\r\n    \"descripcion\": \"esta loca\",\r\n    \"numtelef\": \"994422552\",\r\n    \"tipofactura\": \"facturando ahi\"\r\n  }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8085/clientes/create"
+							},
+							"response": []
+						},
+						{
+							"name": "ModificarCliente",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "  {\r\n    \"nombres\": \"loca natil\",\r\n    \"apellidos\": \"mas lo\",\r\n    \"email\": \"locamaslo@gmail.com\",\r\n    \"fecha\": \"2015-04-03\",\r\n    \"descripcion\": \"esta loca\",\r\n    \"numtelef\": \"994422552\",\r\n    \"tipofactura\": \"facturando ahi\"\r\n  }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8085/clientes/12"
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "MsProveedores",
+			"item": [
+				{
+					"name": "MS",
+					"item": [
+						{
+							"name": "listar todos Copy",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:8084/proveedor/listar"
+							},
+							"response": []
+						},
+						{
+							"name": "crear Copy",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"proveedor_id\": 9,\r\n    \"ruc_proveedor\": \"20789456123\",\r\n    \"nombre_proveedor\": \"Por 3333\",\r\n    \"correo_proveedor\": \"proveedor4@email.com\",\r\n    \"telefono_proveedor\": \"912345678\",\r\n    \"direccion_proveedor\": \"Pasaje Flores 89\",\r\n    \"estado_proveedor\": \"activo\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8084/proveedor/create"
+							},
+							"response": []
+						},
+						{
+							"name": "BUSCAR POR ID Copy",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:8084/proveedor/get/4"
+							},
+							"response": []
+						},
+						{
+							"name": "Editar Copy",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": " {\r\n            \"proveedor_id\": 6,\r\n            \"ruc_proveedor\": \"20456812345\",\r\n            \"nombre_proveedor\": \"Proveedor jans\",\r\n            \"correo_proveedor\": \"proail.com\",\r\n            \"telefono_proveedor\": \"987654321\",\r\n            \"direccion_proveedor\": \"Av. Principal 123\",\r\n            \"estado_proveedor\": \"activo\"\r\n        }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8084/proveedor/update"
+							},
+							"response": []
+						},
+						{
+							"name": "eliminar Copy",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": "http://localhost:8084/proveedor/delete/1\n"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Gateway",
+					"item": [
+						{
+							"name": "listar todos Copy",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:6003/proveedor/proveedor/listar"
+							},
+							"response": []
+						},
+						{
+							"name": "crear Copy",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"proveedor_id\": 9,\r\n    \"ruc_proveedor\": \"20789456123\",\r\n    \"nombre_proveedor\": \"Por 3333\",\r\n    \"correo_proveedor\": \"proveedor4@email.com\",\r\n    \"telefono_proveedor\": \"912345678\",\r\n    \"direccion_proveedor\": \"Pasaje Flores 89\",\r\n    \"estado_proveedor\": \"activo\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:6003/proveedor/proveedor/create"
+							},
+							"response": []
+						},
+						{
+							"name": "BUSCAR POR ID Copy",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:6003/proveedor/proveedor/get/24"
+							},
+							"response": []
+						},
+						{
+							"name": "Editar Copy",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": " {\r\n            \"proveedor_id\": 6,\r\n            \"ruc_proveedor\": \"20456812345\",\r\n            \"nombre_proveedor\": \"Proveedor jans\",\r\n            \"correo_proveedor\": \"proail.com\",\r\n            \"telefono_proveedor\": \"987654321\",\r\n            \"direccion_proveedor\": \"Av. Principal 123\",\r\n            \"estado_proveedor\": \"activo\"\r\n        }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:6003/proveedorproveedor/update"
+							},
+							"response": []
+						},
+						{
+							"name": "eliminar Copy",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": "http://localhost:6003/proveedor/proveedor/delete/6\n"
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
