@@ -30,6 +30,6 @@ spring:
           - Path=/MsCliente/**
         filters:
           - StripPrefix=1
-          - JwtAuthenticationFilter
+          
            
   
