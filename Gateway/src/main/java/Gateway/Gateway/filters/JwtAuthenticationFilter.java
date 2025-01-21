@@ -1,6 +1,6 @@
 package Gateway.Gateway.filters;
 
-import java.net.http.HttpHeaders;
+import java.io.ObjectInputFilter.Config;
 import java.security.Key;
 
 import javax.crypto.spec.SecretKeySpec;
@@ -18,54 +18,43 @@ import io.jsonwebtoken.SignatureAlgorithm;
 
 @Component
 public class JwtAuthenticationFilter extends AbstractGatewayFilterFactory<JwtAuthenticationFilter.Config> {
-	public JwtAuthenticationFilter() {
-		super(Config.class);
-	}
 
 	@Value("${jwt.secret}")
 	private String secret;
 
+	public JwtAuthenticationFilter() {
+		super(Config.class);
+	}
+
 	@Override
-	public GatewayFilter apply(Config config) {
-		// Custom Pre Filter. Suppose we can extract JWT and perform Authentication
+    public GatewayFilter apply(Config config) {
 		return (exchange, chain) -> {
-			System.out.println("Start pre filter jwt" + exchange.getRequest());
-
-			if (!exchange.getRequest().getHeaders().containsKey(HttpHeaders.AUTHORIZATION)) {
-				throw new RuntimeException("Missing authorization information");
-			}
-
-			String authHeader = exchange.getRequest().getHeaders().get(HttpHeaders.AUTHORIZATION).get(0);
-			System.out.println("Show Header ==>> " + authHeader);
-			String[] parts;
-			try {
-				parts = authHeader.split(" ");
-				System.out.println("Token ==>> " + parts[1]);
-				if (parts.length != 2 || !"Bearer".equals(parts[0])) {
-					System.out.println("Incorrect authorization structure");
-					exchange.getResponse().setStatusCode(HttpStatus.UNAUTHORIZED);
-					return exchange.getResponse().setComplete();
-				}
-			} catch (Exception e) {
-				System.out.println("INVALID_TOKEN EMPTY");
+			if (!exchange.getRequest().getHeaders().containsKey("Authorization")) {
 				exchange.getResponse().setStatusCode(HttpStatus.UNAUTHORIZED);
 				return exchange.getResponse().setComplete();
 			}
-
+		
+			String authHeader = exchange.getRequest().getHeaders().getFirst("Authorization");
+			String[] parts = authHeader.split(" ");
+			if (parts.length != 2 || !"Bearer".equals(parts[0])) {
+				exchange.getResponse().setStatusCode(HttpStatus.UNAUTHORIZED);
+				return exchange.getResponse().setComplete();
+			}
+		
 			try {
 				Key hmacKey = new SecretKeySpec(secret.getBytes(), SignatureAlgorithm.HS256.getJcaName());
 				Jws<Claims> jwt = Jwts.parserBuilder().setSigningKey(hmacKey).build().parseClaimsJws(parts[1]);
+				System.out.println("JWT válido: " + jwt.getBody());
 			} catch (Exception e) {
-				System.out.println("INVALID_TOKEN");
 				exchange.getResponse().setStatusCode(HttpStatus.UNAUTHORIZED);
 				return exchange.getResponse().setComplete();
 			}
-			System.out.println("End pre filter jwt");
+		
 			return chain.filter(exchange);
 		};
-	}
+		
 
-	public static class Config {
-		// Put the configuration properties
-	}
+    public static class Config {
+        // Configuración adicional si es necesario
+    }
 }
