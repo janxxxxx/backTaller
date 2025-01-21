@@ -1,0 +1,14 @@
+create database clientes;
+
+use clientes;
+
+CREATE TABLE clientes ( 
+id INT PRIMARY KEY AUTO_INCREMENT, 
+nombres VARCHAR(45) DEFAULT NULL,
+apellidos VARCHAR(45) DEFAULT NULL,
+email VARCHAR(45) DEFAULT NULL,
+fecha date DEFAULT NULL,
+descripcion VARCHAR(45) DEFAULT NULL,
+numtelef VARCHAR(15) DEFAULT NULL,
+tipofactura VARCHAR(45) DEFAULT NULL
+);

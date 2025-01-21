@@ -1,0 +1,8 @@
+//crear imagen
+docker build -t mi-imagen-mysql .
+
+//crear contenedor
+docker run -d --name mysql-container -p 3307:3306 mi-imagen-mysql
+
+//verificar que contenedores corren
+docker ps
